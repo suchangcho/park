@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Team_tower
+  - Team_Unit
+  - Enemy_Tower
   layers:
   - Default
   - TransparentFX
