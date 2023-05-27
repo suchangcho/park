@@ -32,8 +32,8 @@ public class Enemy : MonoBehaviour
     void Ray_Judgement()
     {
         ray = new Vector3(-1, 0, 0);
-        Debug.DrawRay(myrigid.position, ray * 2.5f, new Color(0, 1, 0));
-        RaycastHit2D rayhit = Physics2D.Raycast(myrigid.position, ray, 2.5f,LayerMask.GetMask("Team"));
+        Debug.DrawRay(myrigid.position, ray * 1f, new Color(0, 1, 0));
+        RaycastHit2D rayhit = Physics2D.Raycast(myrigid.position, ray, 1f,LayerMask.GetMask("Team"));
 
         if (rayhit.collider != null)
         {
@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
     {
         if (!is_Attack)
         {
-            this.transform.position = Vector2.MoveTowards(transform.position,new Vector2(target_tower.position.x,-3),this.Speed * Time.deltaTime);//목표위치에 y값은 가져오면 공중으로 날아가기에 0으로 고정
+            this.transform.position = Vector2.MoveTowards(transform.position,new Vector2(target_tower.position.x,-3.7f),this.Speed * Time.deltaTime);//목표위치에 y값은 가져오면 공중으로 날아가기에 0으로 고정
             //MoveTowards는(시작위치,목표위치,속도)이고 Tranlates는(방향,속도)
         }
     }
