@@ -25,7 +25,7 @@ public class Spawn_Enemy : MonoBehaviour
     }
     void Spawn_Enemys()
     {
-            GameObject enemy = (GameObject)Instantiate(Enemy, new Vector2(Spawns.transform.position.x-1.5f,-3), Quaternion.identity);
+            GameObject enemy = (GameObject)Instantiate(Enemy, new Vector2(Spawns.transform.position.x-1.5f,-3.7f), Quaternion.identity);
             //몬스터를 타워 앞에서 소환하고 타워의 아래쪽에서 나오게 하기위해 상수값을 더해줌.
     }
 }
