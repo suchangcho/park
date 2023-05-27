@@ -331,7 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 3495125782967135304, guid: 17b4a4dc1f1ed774fafe513672f4dbd0, type: 3}
   Spawns: {fileID: 280477665}
-  spawn_cooltime: 30
+  spawn_cooltime: 5
   cooltime: 0
 --- !u!114 &280477670
 MonoBehaviour:
@@ -936,7 +936,7 @@ GameObject:
   - component: {fileID: 1993154751}
   - component: {fileID: 1993154750}
   - component: {fileID: 1993154752}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Team_tower
   m_TagString: Team_tower
   m_Icon: {fileID: 0}
