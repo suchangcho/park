@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 280477668}
   - component: {fileID: 280477667}
   - component: {fileID: 280477669}
+  - component: {fileID: 280477670}
   m_Layer: 0
   m_Name: Enemy_tower
   m_TagString: Enemy_Tower
@@ -330,8 +331,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 3495125782967135304, guid: 17b4a4dc1f1ed774fafe513672f4dbd0, type: 3}
   Spawns: {fileID: 280477665}
-  spawn_cooltime: 0
+  spawn_cooltime: 30
   cooltime: 0
+--- !u!114 &280477670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280477665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a27b3a77b0e18b642860743321a59a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tower_MaxHp: 9999
+  Tower_Current_Hp: 0
+  Hp_Txt: {fileID: 663807369}
 --- !u!1 &567005877
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,6 +935,7 @@ GameObject:
   - component: {fileID: 1993154749}
   - component: {fileID: 1993154751}
   - component: {fileID: 1993154750}
+  - component: {fileID: 1993154752}
   m_Layer: 0
   m_Name: Team_tower
   m_TagString: Team_tower
@@ -1017,6 +1034,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1993154752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993154748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a27b3a77b0e18b642860743321a59a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tower_MaxHp: 9999
+  Tower_Current_Hp: 0
+  Hp_Txt: {fileID: 1802248269}
 --- !u!1 &2095584861
 GameObject:
   m_ObjectHideFlags: 0
