@@ -28,6 +28,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Dead();
         Ray_Judgement();
         Move();
         Attack_cool();
@@ -41,10 +42,8 @@ public class Enemy : MonoBehaviour
         if (rayhit.collider != null)
         {
             Target = rayhit.collider.gameObject;
-            if (Target.gameObject.tag == "Team_tower")
-            {
-                Attack(Target);
-            }
+            Attack(Target);
+            
         }
         else
         {
@@ -60,15 +59,27 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void Attack(GameObject Team_Tower)
+    void Attack(GameObject Team)
     {
         is_Attack = true;
         if (Mob_Atk_cool <= 0)//만약 쿨타임이 델타타임에서부터 깎여 0초가 되었다면
         {
-            mob_anim.SetTrigger("Attack");//애니매이션 호출.
-            Team_Tower.GetComponent<Tower>().Tower_Current_Hp -= Mob_Atk;//부딧힌 타워에서 타워 스크립트에 접근해 HP를 공격력만큼 깍아줌.
-            Mob_Atk_cool = Mob_Atk_Speed;//쿨 기준 초기화 <= 다시 0이되면 적 공격
-
+            if(Team.gameObject.tag == "Team_tower")
+            {
+                mob_anim.SetTrigger("Attack");//애니매이션 호출.
+                Team.GetComponent<Tower>().Tower_Current_Hp -= Mob_Atk;//부딧힌 타워에서 타워 스크립트에 접근해 HP를 공격력만큼 깍아줌.
+                is_Attack = false;
+                Mob_Atk_cool = Mob_Atk_Speed;//쿨 기준 초기화 <= 다시 0이되면 적 공격
+                
+            }
+        else if (Team.gameObject.tag == "Team_Unit")
+            {
+                mob_anim.SetTrigger("Attack");//애니매이션 호출.
+                Team.GetComponent<Team_Unit>().Unit_HP -= Mob_Atk;//부딧힌 타워에서 타워 스크립트에 접근해 HP를 공격력만큼 깍아줌.
+                is_Attack = false;
+                Mob_Atk_cool = Mob_Atk_Speed;//쿨 기준 초기화 <= 다시 0이되면 적 공격
+                
+            }
         }
     }
 
@@ -85,7 +96,7 @@ public class Enemy : MonoBehaviour
     {
         if(Mob_HP <= 0)//적의 체력이 0으로 내려가게되면.
         {
-            mob_anim.SetTrigger("Dead");
+            //mob_anim.SetTrigger("Dead");
             Destroy(this.gameObject);
         }
     }

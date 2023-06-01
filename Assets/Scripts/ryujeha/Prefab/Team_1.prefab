@@ -148,7 +148,7 @@ MonoBehaviour:
   myrigid: {fileID: 423954740449189326}
   Unit_HP: 300
   Speed: 1
-  Unit_Atk: 0
+  Unit_Atk: 100
   Unit_Atk_cool: 0
-  Unit_Atk_Speed: 0
+  Unit_Atk_Speed: 1
   Target: {fileID: 0}

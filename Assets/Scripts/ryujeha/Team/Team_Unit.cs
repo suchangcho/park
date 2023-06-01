@@ -28,6 +28,7 @@ public class Team_Unit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Dead();
         Ray_Judgement();
         Move();
         Attack_cool();
@@ -41,10 +42,7 @@ public class Team_Unit : MonoBehaviour
         if (rayhit.collider != null)
         {
             Target = rayhit.collider.gameObject;
-            if (Target.gameObject.tag == "Enemy_Tower")
-            {
-                Attack(Target);
-            }
+            Attack(Target);
         }
         else
         {
@@ -60,14 +58,25 @@ public class Team_Unit : MonoBehaviour
         }
     }
 
-    void Attack(GameObject Team_Tower)
+    void Attack(GameObject Enemy)
     {
         is_Attack = true;
         if (Unit_Atk_cool <= 0)//만약 쿨타임이 델타타임에서부터 깎여 0초가 되었다면
         {
-            Unit_anim.SetTrigger("Attack");//애니매이션 호출.
-            Team_Tower.GetComponent<Tower>().Tower_Current_Hp -= Unit_Atk;//부딧힌 타워에서 타워 스크립트에 접근해 HP를 공격력만큼 깍아줌.
-            Unit_Atk_cool = Unit_Atk_Speed;//쿨 기준 초기화 <= 다시 0이되면 적 공격
+            if (Enemy.gameObject.tag == "Enemy_Tower")
+            {
+                //Unit_anim.SetTrigger("Attack");//애니매이션 호출.
+                Enemy.GetComponent<Tower>().Tower_Current_Hp -= Unit_Atk;//부딧힌 타워에서 타워 스크립트에 접근해 HP를 공격력만큼 깍아줌.
+                Unit_Atk_cool = Unit_Atk_Speed;//쿨 기준 초기화 <= 다시 0이되면 적 공격
+                is_Attack = false;
+            }
+            else if (Enemy.gameObject.tag == "Enemy")
+            {
+                //Unit_anim.SetTrigger("Attack");//애니매이션 호출.
+                Enemy.GetComponent<Enemy>().Mob_HP -= Unit_Atk;//부딧힌 타워에서 타워 스크립트에 접근해 HP를 공격력만큼 깍아줌.
+                Unit_Atk_cool = Unit_Atk_Speed;//쿨 기준 초기화 <= 다시 0이되면 적 공격
+                is_Attack = false;
+            }
         }
     }
 
@@ -84,7 +93,7 @@ public class Team_Unit : MonoBehaviour
     {
         if (Unit_HP <= 0)//적의 체력이 0으로 내려가게되면.
         {
-            Unit_anim.SetTrigger("Dead");
+           //Unit_anim.SetTrigger("Dead");
             Destroy(this.gameObject);
         }
     }

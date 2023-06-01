@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Team_Spawn : MonoBehaviour
 {
     public GameObject[] Team;//받을 적 캐릭터 프리펩
