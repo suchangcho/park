@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Spawn_Enemy : MonoBehaviour
 {
-    public GameObject Enemy;//받을 적 소 캐릭터 프리펩
-    public GameObject Spawns;//스폰포인트들을 담을 배열변수
+    public GameObject Enemy;//받을 적 캐릭터 프리펩
+    public GameObject Spawns;//스폰포인트를 담을 변수
 
     public float spawn_cooltime;//쿨타임 기준 설정
     public float cooltime;//실제 쿨타임 연산
