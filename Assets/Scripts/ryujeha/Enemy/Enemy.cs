@@ -43,7 +43,6 @@ public class Enemy : MonoBehaviour
         {
             Target = rayhit.collider.gameObject;
             Attack(Target);
-            
         }
         else
         {

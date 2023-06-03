@@ -14,7 +14,7 @@ public class Team_Unit : MonoBehaviour
     public float Speed;//얼마만큼 속도로 이동시킬지에 대한 변수.
     public int Unit_Atk;//적의 공격력
     public float Unit_Atk_cool;//적 공속 쿨다운
-    public int Unit_Atk_Speed;//적의 공격속도
+    public int Unit_Atk_Speed;//적의 공격속도 기준
 
     bool is_Attack;//공격 여부(공격을 해야하는 경우 제자리의 멈춰서 공격해야하기때문에)
 
