@@ -8,8 +8,25 @@ public class ScreenManager : MonoBehaviour
     public GameObject scrollbar;
     float scroll_pos = 0;
     float[] pos;
+    int posisi = 0;
 
+    public void next()
+    {
+        if(posisi < pos.Length - 1)
+        {
+            posisi += 1;
+            scroll_pos = pos[posisi];
+        }
+    }
 
+    public void prev()
+    {
+        if(posisi > 0)
+        {
+            posisi -= 1;
+            scroll_pos = pos[posisi];
+        }
+    }
 
     void Update()
     {
@@ -30,11 +47,12 @@ public class ScreenManager : MonoBehaviour
                 if (scroll_pos < pos[i] + (distance / 2) && scroll_pos > pos[i] - (distance / 2))
                 {
                     scrollbar.GetComponent<Scrollbar>().value = Mathf.Lerp(scrollbar.GetComponent<Scrollbar>().value, pos[i], 0.1f);
+                    posisi = i;
                 }
             }
         }
 
-        for (int i = 0; i < pos.Length; i++)
+        /*for (int i = 0; i < pos.Length; i++)
         {
             if (scroll_pos < pos[i] + (distance / 2) && scroll_pos > pos[i] - (distance / 2))
             {
@@ -47,7 +65,7 @@ public class ScreenManager : MonoBehaviour
                     }
                 }
             }
-        }
+        }*/
     }
 
 
