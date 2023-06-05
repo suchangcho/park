@@ -35,8 +35,9 @@ public class Team_Unit : MonoBehaviour
     }
     void Ray_Judgement()
     {
-        ray = new Vector3(1, 0, 0);
-        Debug.DrawRay(myrigid.position, ray * 1f, new Color(0, 1, 0));
+        is_Attack = false;
+        ray = new Vector3(0.8f, 0, 0);
+        Debug.DrawRay(myrigid.position, ray * 0.8f, new Color(0, 1, 0));
         RaycastHit2D rayhit = Physics2D.Raycast(myrigid.position, ray, 1f, LayerMask.GetMask("Enemy"));
 
         if (rayhit.collider != null)
@@ -65,17 +66,15 @@ public class Team_Unit : MonoBehaviour
         {
             if (Enemy.gameObject.tag == "Enemy_Tower")
             {
-                //Unit_anim.SetTrigger("Attack");//애니매이션 호출.
+                Unit_anim.SetTrigger("Attack");//애니매이션 호출.
                 Enemy.GetComponent<Tower>().Tower_Current_Hp -= Unit_Atk;//부딧힌 타워에서 타워 스크립트에 접근해 HP를 공격력만큼 깍아줌.
                 Unit_Atk_cool = Unit_Atk_Speed;//쿨 기준 초기화 <= 다시 0이되면 적 공격
-                is_Attack = false;
             }
             else if (Enemy.gameObject.tag == "Enemy")
             {
-                //Unit_anim.SetTrigger("Attack");//애니매이션 호출.
+                Unit_anim.SetTrigger("Attack");//애니매이션 호출.
                 Enemy.GetComponent<Enemy>().Mob_HP -= Unit_Atk;//부딧힌 타워에서 타워 스크립트에 접근해 HP를 공격력만큼 깍아줌.
                 Unit_Atk_cool = Unit_Atk_Speed;//쿨 기준 초기화 <= 다시 0이되면 적 공격
-                is_Attack = false;
             }
         }
     }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7101076920534289061}
   - component: {fileID: 423954740449189326}
   - component: {fileID: -6539900410747675591}
+  - component: {fileID: 7968467506072117129}
   m_Layer: 3
   m_Name: Team_1
   m_TagString: Team_Unit
@@ -144,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0f969b00abba3c41bec53333f28ed25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Unit_anim: {fileID: 0}
+  Unit_anim: {fileID: 7968467506072117129}
   myrigid: {fileID: 423954740449189326}
   Unit_HP: 300
   Speed: 1
@@ -152,3 +153,24 @@ MonoBehaviour:
   Unit_Atk_cool: 0
   Unit_Atk_Speed: 1
   Target: {fileID: 0}
+--- !u!95 &7968467506072117129
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3630939614144520606}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a38bab31aeefa2c4985420521fc685a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
