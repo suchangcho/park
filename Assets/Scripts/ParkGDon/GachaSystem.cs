@@ -20,7 +20,6 @@ public class GachaSystem : MonoBehaviour
     {
         GachaCard card = SelectRandomCard(); //랜덤하게 카드 선택
         SpawnCard(card, singlePullCardSpawnPoint.position); //스폰하기
-        Debug.Log(singlePullCardSpawnPoint.position);
     }
     //열 개 뽑기
     public void TenPool()
@@ -33,17 +32,15 @@ public class GachaSystem : MonoBehaviour
             if (i < tenPullCardSpawnPoint.Length)
             {
                 SpawnCard(card, tenPullCardSpawnPoint[i].position); //스폰
-                //Debug.Log(tenPullCardSpawnPoint[i].position);
             }
         }
     }
 
     private void SpawnCard(GachaCard card, Vector3 spawnPosition)
     {
-        GameObject cardObject = Instantiate(cardPrefab, spawnPosition, Quaternion.identity);
+        GameObject cardObject = Instantiate(cardPrefab, spawnPosition, Quaternion.identity); //위치 가져오기
         cardObject.transform.parent = UiCanvas;
         GachaUI gachaUI = cardObject.GetComponent<GachaUI>();
-        //Debug.Log(spawnPosition);
         if (gachaUI != null)
         {
             gachaUI.SetCardInfo(card);

@@ -38,8 +38,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 38, y: 78}
+  m_SizeDelta: {x: 67.247, y: 67.247}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5743343946577516068
 CanvasRenderer:
@@ -128,8 +128,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -59, y: 290}
-  m_SizeDelta: {x: 153.7347, y: 61.5576}
+  m_AnchoredPosition: {x: 53.5, y: 100.1}
+  m_SizeDelta: {x: 93.2922, y: 37.3555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7107868190945379737
 CanvasRenderer:
@@ -166,7 +166,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 50
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -207,8 +207,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 74}
-  m_SizeDelta: {x: 393.9839, y: 532.5283}
+  m_AnchoredPosition: {x: 1, y: -32}
+  m_SizeDelta: {x: 239.0848, y: 323.159}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8587729805152785174
 CanvasRenderer:
@@ -282,8 +282,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: -248}
-  m_SizeDelta: {x: 417.4508, y: 78.272}
+  m_AnchoredPosition: {x: 1.0001163, y: -227.40216}
+  m_SizeDelta: {x: 253.3255, y: 47.4985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1037267079904558961
 CanvasRenderer:
@@ -315,10 +315,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 3
     m_MaxSize: 50
     m_Alignment: 0
     m_AlignByGeometry: 0
