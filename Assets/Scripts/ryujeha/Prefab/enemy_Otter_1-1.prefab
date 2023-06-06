@@ -147,9 +147,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mob_anim: {fileID: 6369835282516637798}
   myrigid: {fileID: 504595168129437720}
-  Mob_HP: 200
+  Mob_HP: 10000
   Speed: 1
-  Mob_Atk: 100
+  Mob_Atk: 50
   Mob_Atk_cool: 0
   Mob_Atk_Speed: 1
   Target: {fileID: 0}
