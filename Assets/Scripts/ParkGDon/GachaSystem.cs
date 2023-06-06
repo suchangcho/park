@@ -11,6 +11,7 @@ public class GachaSystem : MonoBehaviour
     public Transform[] tenPullCardSpawnPoint;
 
     //카드와 GachaUI 프리팹
+    public Transform UiCanvas;
     public GameObject cardPrefab;
     public GachaUI gachaUIprefab;
 
@@ -19,6 +20,7 @@ public class GachaSystem : MonoBehaviour
     {
         GachaCard card = SelectRandomCard(); //랜덤하게 카드 선택
         SpawnCard(card, singlePullCardSpawnPoint.position); //스폰하기
+        Debug.Log(singlePullCardSpawnPoint.position);
     }
     //열 개 뽑기
     public void TenPool()
@@ -31,6 +33,7 @@ public class GachaSystem : MonoBehaviour
             if (i < tenPullCardSpawnPoint.Length)
             {
                 SpawnCard(card, tenPullCardSpawnPoint[i].position); //스폰
+                //Debug.Log(tenPullCardSpawnPoint[i].position);
             }
         }
     }
@@ -38,7 +41,9 @@ public class GachaSystem : MonoBehaviour
     private void SpawnCard(GachaCard card, Vector3 spawnPosition)
     {
         GameObject cardObject = Instantiate(cardPrefab, spawnPosition, Quaternion.identity);
+        cardObject.transform.parent = UiCanvas;
         GachaUI gachaUI = cardObject.GetComponent<GachaUI>();
+        //Debug.Log(spawnPosition);
         if (gachaUI != null)
         {
             gachaUI.SetCardInfo(card);

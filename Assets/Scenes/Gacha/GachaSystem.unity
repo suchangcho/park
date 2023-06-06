@@ -255,8 +255,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330260720}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 700.9778, y: 651.09064, z: -171.44557}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -298.02222, y: 34.925964, z: -50.021706}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2094672722}
@@ -269,8 +269,8 @@ Transform:
   - {fileID: 896562246}
   - {fileID: 1072940046}
   - {fileID: 949840029}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 2047086041}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &343036633
 GameObject:
@@ -295,12 +295,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343036633}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1005, y: 616.1647, z: -121.42387}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 2047086041}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &743466141
 GameObject:
@@ -1040,7 +1040,8 @@ MonoBehaviour:
   - {fileID: 896562246}
   - {fileID: 1072940046}
   - {fileID: 949840029}
-  cardPrefab: {fileID: 4782952715188231726, guid: 89e2fa0a7b5a66e45b22a4aeef2a9fa4, type: 3}
+  UiCanvas: {fileID: 780900868}
+  cardPrefab: {fileID: 2222897429215654619, guid: 9320746d1e80cd943beb2e3447de8d4e, type: 3}
   gachaUIprefab: {fileID: 0}
 --- !u!4 &2047086041
 Transform:
@@ -1052,7 +1053,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 999, y: 616.1647, z: -121.42387}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 343036634}
+  - {fileID: 330260721}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
