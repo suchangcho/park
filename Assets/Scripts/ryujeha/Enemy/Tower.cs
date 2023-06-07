@@ -19,5 +19,6 @@ public class Tower : MonoBehaviour
     void Set_Hp()
     {
         Hp_Txt.text = Tower_Current_Hp.ToString() + "/" + Tower_MaxHp.ToString();
+        
     }
 }

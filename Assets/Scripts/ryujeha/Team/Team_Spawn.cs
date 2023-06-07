@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 public class Team_Spawn : MonoBehaviour
 {
+    public int Cost;//스킬을 사용할 코스트;
+    public Text cost_TXT;//코스트 텍스트.
     public GameObject[] Team;//받을 적 캐릭터 프리펩
     public GameObject Spawns;//스폰포인트를 담을 변수
 
@@ -10,14 +13,17 @@ public class Team_Spawn : MonoBehaviour
     public float cooltime;//실제 쿨타임 연산
 
     bool is_Spawn = false;//무한소환이 되면 안되므로, 소환을 할때 약간의 쿨타임을 주기위한 변수
-    // Start is called before the first frame update
-    // Update is called once per frame
+    private void Start()
+    {
+        Cost = 3;
+    }
     void Update()
     {
         SpawnCool();
     }
     public void SpawnCool()
     {
+        cost_TXT.text = Cost.ToString() + "코스트 남음";
         cooltime -= Time.deltaTime;//실제 쿨타임 연산
         if (cooltime <= 0)//만약 쿨타임이 델타타임에서부터 깎여 0초가 되었다면
         {

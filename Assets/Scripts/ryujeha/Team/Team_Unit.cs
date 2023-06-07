@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Team_Unit : MonoBehaviour
 {
+
     public Animator Unit_anim;//에너미의 에니메이터 각각 다르게 넣어줘야함.
 
     Transform target_tower;//어디까지 이동할 지에 대한 목표위치받기.
