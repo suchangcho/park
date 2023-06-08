@@ -17,22 +17,14 @@ public class LoadScene : MonoBehaviour
     }
     public void LoadNextScene()
     {
-        SaveData();
         SceneManager.LoadScene(nextScene);
     }
-
-    public void TenGachaCheck()
+    public void TenBtn()
     {
-        tenGacha = true;
+        GameMgr.Instance.TenGachaCheck();
     }
-    public void SingleGachaCheck()
+    public void SingleBtn()
     {
-        singleGacha = true;
-    }
-    void SaveData()
-    {
-        PlayerPrefs.SetInt("TenGacha", tenGacha ? 1 : 0);
-        PlayerPrefs.SetInt("SingleGacha", singleGacha ? 1 : 0);
-        PlayerPrefs.Save();
+        GameMgr.Instance.SingleGachaCheck();
     }
 }
