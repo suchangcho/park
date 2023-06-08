@@ -9,7 +9,6 @@ public class PlayingCheck : MonoBehaviour
     public bool singleGacha;
     private void Awake()
     {
-        //LoadSavedData();
         Debug.Log(tenGacha);
         Debug.Log(singleGacha);
 
@@ -18,14 +17,6 @@ public class PlayingCheck : MonoBehaviour
     {
         TenOrSingle();
     }
-    /*
-    void LoadSavedData()
-    {
-        tenGacha = PlayerPrefs.GetInt("TenGacha", 0) == 1;
-        singleGacha = PlayerPrefs.GetInt("SingleGacha", 0) == 1;
-    }
-    */
-    
     void TenOrSingle()
     {
         GameMgr.Instance.GachaCheck();
