@@ -15,4 +15,7 @@ MonoBehaviour:
   name: SuDal
   description: 
   monster: {fileID: 21300000, guid: 086a41ce1090d14438e6ab51960a5596, type: 3}
-  level: 1
+  maxHp: 200
+  attack: 50
+  attackSpeed: 5
+  speed: 10
