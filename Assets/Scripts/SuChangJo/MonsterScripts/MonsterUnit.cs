@@ -4,21 +4,32 @@ using UnityEngine;
 
 public class MonsterUnit : MonoBehaviour
 {
-    [SerializeField] MonsterBase _base;
+    public MonsterBase _base;
     public int level;
-
-    public Monster Monster { get; set; }
-
-    public void Setup()
-    {
-        Monster = new Monster(_base, level);
-    }
-
     public void PowerUp()
     {
-        Debug.Log("1");
+        Debug.Log(level);
         level += 1;
+        Debug.Log(Attack);
+        Debug.Log(MaxHP);
+    }
+    
 
+    public int Attack
+    {
+        get { return _base.Attack + (level * 5); }
+    }
+    public int AttackSpeed
+    {
+        get { return _base.AttackSpeed; }
+    }
+    public int Speed
+    {
+        get { return _base.Speed; }
+    }
+    public int MaxHP
+    {
+        get { return _base.MaxHp + (level * 200); }
     }
 
 }

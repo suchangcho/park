@@ -10,10 +10,10 @@ public class MonsterHUD : MonoBehaviour
     public Text levelText;
 
     // Update is called once per frame
-    public void SetData(Monster monster)
+    public void SetData(MonsterUnit monsterUnit)
     {
-        nameText.text = monster.Base.name;
-        levelText.text = "Lvl " + monster.level;
+        nameText.text = monsterUnit._base.name;
+        levelText.text = "Lvl " + monsterUnit.level;
     }
 
 }

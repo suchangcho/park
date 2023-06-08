@@ -7,14 +7,12 @@ public class GameSystem : MonoBehaviour
     [SerializeField] MonsterUnit monsterUnit;
     [SerializeField] MonsterHUD monsterHUD;
 
-    private void Start()
+    public void Start()
     {
-        SetupStart();
+           
     }
-
-    public void SetupStart()
+    public void Update()
     {
-        monsterUnit.Setup();
-        monsterHUD.SetData(monsterUnit.Monster);
+        monsterHUD.SetData(monsterUnit);
     }
 }
