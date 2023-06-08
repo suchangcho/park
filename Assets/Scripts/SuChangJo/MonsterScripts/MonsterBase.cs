@@ -44,7 +44,4 @@ public class MonsterBase : ScriptableObject
         get { return speed; }
     }
 
-
-
-
 }

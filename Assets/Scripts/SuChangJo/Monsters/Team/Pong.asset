@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Pong
   description: 
-  monster: {fileID: 21300000, guid: 98a410d41b37ec84db8277af48364109, type: 3}
+  monster: {fileID: 21300000, guid: 6bf5dc7be6cfc404497b645a4e06a503, type: 3}
   maxHp: 130
   attack: 50
   attackSpeed: 5
