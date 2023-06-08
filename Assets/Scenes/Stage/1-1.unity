@@ -1776,10 +1776,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1993154748}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b1cda729a3c9714c85909e1fd2701bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 65326450dcaf8c64ca2f5f91a0131bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cost: 0
+  Cost: 3
   cost_TXT: {fileID: 139005837}
   Team:
   - {fileID: 3630939614144520606, guid: 961ba496f82a46c4a858a551436243da, type: 3}

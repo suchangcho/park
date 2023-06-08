@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6418034411124946380}
   - component: {fileID: 6948642873831130995}
   - component: {fileID: 504595168129437720}
-  - component: {fileID: 6020855880728780571}
   - component: {fileID: 6369835282516637798}
+  - component: {fileID: 7821130683655815700}
   m_Layer: 6
   m_Name: enemy_Otter_1-1
   m_TagString: Enemy
@@ -133,26 +133,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6020855880728780571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3495125782967135304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 128a560562283bd4bae923bc4d22b72f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mob_anim: {fileID: 6369835282516637798}
-  myrigid: {fileID: 504595168129437720}
-  Mob_HP: 10000
-  Speed: 1
-  Mob_Atk: 50
-  Mob_Atk_cool: 0
-  Mob_Atk_Speed: 1
-  Target: {fileID: 0}
 --- !u!95 &6369835282516637798
 Animator:
   serializedVersion: 5
@@ -174,3 +154,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7821130683655815700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3495125782967135304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dfb209e05aed9f4db904b034d6de564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Unit_anim: {fileID: 6369835282516637798}
+  myrigid: {fileID: 504595168129437720}
+  Unit_HP: 200
+  Speed: 1
+  Unit_Atk: 50
+  Unit_Atk_cool: 0
+  Unit_Atk_Speed: 1
+  Target: {fileID: 0}

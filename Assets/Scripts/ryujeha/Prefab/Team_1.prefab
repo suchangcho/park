@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6625901693970102298}
   - component: {fileID: 7101076920534289061}
   - component: {fileID: 423954740449189326}
-  - component: {fileID: -6539900410747675591}
   - component: {fileID: 7968467506072117129}
+  - component: {fileID: -976587557283863328}
   m_Layer: 3
   m_Name: Team_1
   m_TagString: Team_Unit
@@ -133,26 +133,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-6539900410747675591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3630939614144520606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0f969b00abba3c41bec53333f28ed25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Unit_anim: {fileID: 7968467506072117129}
-  myrigid: {fileID: 423954740449189326}
-  Unit_HP: 300
-  Speed: 1
-  Unit_Atk: 100
-  Unit_Atk_cool: 0
-  Unit_Atk_Speed: 1
-  Target: {fileID: 0}
 --- !u!95 &7968467506072117129
 Animator:
   serializedVersion: 5
@@ -174,3 +154,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-976587557283863328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3630939614144520606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dfb209e05aed9f4db904b034d6de564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Unit_anim: {fileID: 7968467506072117129}
+  myrigid: {fileID: 423954740449189326}
+  Unit_HP: 200
+  Speed: 1
+  Unit_Atk: 50
+  Unit_Atk_cool: 0
+  Unit_Atk_Speed: 1
+  Target: {fileID: 0}
