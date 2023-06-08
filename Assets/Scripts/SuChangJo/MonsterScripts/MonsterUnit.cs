@@ -14,4 +14,11 @@ public class MonsterUnit : MonoBehaviour
         Monster = new Monster(_base, level);
     }
 
+    public void PowerUp()
+    {
+        Debug.Log("1");
+        level += 1;
+
+    }
+
 }

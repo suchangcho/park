@@ -9,16 +9,7 @@ public class MonsterHUD : MonoBehaviour
     [SerializeField] Text nameText;
     public Text levelText;
 
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void SetData(Monster monster)
     {
         nameText.text = monster.Base.name;

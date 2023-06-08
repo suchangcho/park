@@ -14,11 +14,37 @@ public class MonsterBase : ScriptableObject
     [SerializeField] Sprite monster; //몬스터 사진
 
 
-    public int maxHp { get { return maxHp; }} //최대 체력
-    public int curHP { get { return curHP; }}//현재 체력
-    public int attack { get { return attack; } }//공격력
-    public int attackSpeed { get { return attackSpeed; } } //공격속도
-    public int speed { get { return speed; } } //스피드
+    [SerializeField] int maxHp;//최대 체력
+    [SerializeField] int attack;//공격력
+    [SerializeField] int attackSpeed; //공격속도
+    [SerializeField] int speed; //스피드
+
+    public string Name
+    {
+        get { return name; }
+    }
+    public string Description
+    {
+        get { return description; }
+    }
+    public int MaxHp
+    {
+        get { return maxHp; }
+    }
+    public int Attack
+    {
+        get { return attack; }
+    }
+    public int AttackSpeed
+    {
+        get { return attackSpeed; }
+    }
+    public int Speed
+    {
+        get { return speed; }
+    }
+
+
 
 
 }
