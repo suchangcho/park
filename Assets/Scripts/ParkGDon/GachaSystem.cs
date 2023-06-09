@@ -15,6 +15,11 @@ public class GachaSystem : MonoBehaviour
     public GameObject cardPrefab;
     public GachaUI gachaUIprefab;
 
+    private void Start()
+    {
+        GameMgr.Instance.GachaCheck(); //정상적으로 체크 되었는지 확인 (임시임)
+    }
+
     //한 개 뽑기
     public void SinglePool()
     {
@@ -36,7 +41,8 @@ public class GachaSystem : MonoBehaviour
         }
     }
 
-    private void SpawnCard(GachaCard card, Vector3 spawnPosition)
+    //카드 스폰하기
+    private void SpawnCard(GachaCard card, Vector3 spawnPosition) //spawnPosition을 받아서 넣어줌
     {
         GameObject cardObject = Instantiate(cardPrefab, spawnPosition, Quaternion.identity); //위치 가져오기
         cardObject.transform.parent = UiCanvas;
@@ -46,6 +52,7 @@ public class GachaSystem : MonoBehaviour
             gachaUI.SetCardInfo(card);
         }
     }
+    //랜덤하게 카드 뽑기.
     private GachaCard SelectRandomCard()
     {
         int totalWeight = 0;

@@ -7,15 +7,18 @@ public class PlayingCheck : MonoBehaviour
 {
     public bool tenGacha;
     public bool singleGacha;
+    LoadScene load;
+
     private void Awake()
     {
-        Debug.Log(tenGacha);
-        Debug.Log(singleGacha);
-
+        load = GetComponent<LoadScene>();
     }
     private void Start()
     {
         TenOrSingle();
+
+        //여기 애니메이션 넣기
+        load.LoadNextScene();
     }
     void TenOrSingle()
     {
