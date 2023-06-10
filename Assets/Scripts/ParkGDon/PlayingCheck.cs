@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayingCheck : MonoBehaviour
 {
-    public bool tenGacha;
-    public bool singleGacha;
     LoadScene load;
 
     private void Awake()
@@ -16,7 +14,6 @@ public class PlayingCheck : MonoBehaviour
     private void Start()
     {
         TenOrSingle();
-
         //여기 애니메이션 넣기
         load.LoadNextScene();
     }

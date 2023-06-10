@@ -17,7 +17,15 @@ public class GachaSystem : MonoBehaviour
 
     private void Start()
     {
-        GameMgr.Instance.GachaCheck(); //정상적으로 체크 되었는지 확인 (임시임)
+        //GameMgr.Instance.GachaCheck(); //정상적으로 체크 되었는지 확인 (임시임)
+        if (GameMgr.Instance.tenGacha == true) //만약 10회가 활성화 되었다면?
+        {
+            TenPool(); //10회뽑 함수 출력
+        }
+        else if (GameMgr.Instance.singleGacha == true) //1회뽑을 체크하였다면?
+        {
+            SinglePool(); //1회뽑 함수 출력
+        }
     }
 
     //한 개 뽑기
@@ -45,7 +53,7 @@ public class GachaSystem : MonoBehaviour
     private void SpawnCard(GachaCard card, Vector3 spawnPosition) //spawnPosition을 받아서 넣어줌
     {
         GameObject cardObject = Instantiate(cardPrefab, spawnPosition, Quaternion.identity); //위치 가져오기
-        cardObject.transform.parent = UiCanvas;
+        cardObject.transform.SetParent(UiCanvas,false);
         GachaUI gachaUI = cardObject.GetComponent<GachaUI>();
         if (gachaUI != null)
         {

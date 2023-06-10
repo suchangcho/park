@@ -28,15 +28,15 @@ public class GameMgr
 
     //게임 매니저 인스턴스에 접근할 수 있는 프로퍼티. static이므로 다른 클래스에서 맘껏 호출할 수 있다.
     //GameMgr.Instance.함수명() 으로 어디서든 함수를 호출할 수 있다.
-    public void TenGachaCheck()
+    public void TenGachaCheck() //가챠 10회뽑 체크
     {
         tenGacha = true;
     }
-    public void SingleGachaCheck()
+    public void SingleGachaCheck() //가챠 1회뽑 체크
     {
         singleGacha = true;
     }
-    public void GachaCheck()
+    public void GachaCheck() //10회냐 1회냐? 체크
     {
         if (tenGacha == true)
         {
