@@ -11,6 +11,10 @@ public class GameMgr
 
     public bool tenGacha;
     public bool singleGacha;
+    Input_Manager _input = new Input_Manager();
+    public static Input_Manager Input{get{return Instance._input;}} 
+
+   
 
     //게임 매니저 인스턴스에 접근할 수 있는 프로퍼티. static이므로 다른 클래스에서 맘껏 호출할 수 있다.
     public static GameMgr Instance
@@ -46,5 +50,8 @@ public class GameMgr
         {
             Debug.Log("1회뽑");
         }
+    }
+    private void Update() {
+        _input.OnUpdate();
     }
 }
