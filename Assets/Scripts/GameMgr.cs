@@ -9,8 +9,9 @@ public class GameMgr
     //보안을 위해 private으로.
     private static GameMgr instance;
 
-    public bool tenGacha;
-    public bool singleGacha;
+    public bool tenGacha; //10회뽑
+    public bool singleGacha; //1회뽑
+
     Input_Manager _input = new Input_Manager();
     public static Input_Manager Input{get{return Instance._input;}} 
 
@@ -51,7 +52,12 @@ public class GameMgr
             Debug.Log("1회뽑");
         }
     }
-    private void Update() {
+    public void PassBtn() //뽑기 False로 만들어줘서 다시 실행하는 함수
+    {
+        tenGacha = false;
+        singleGacha = false;
+    }
+    private void Update() { //이거 무슨 코드인가요 제하씨 설명필요!!!
         _input.OnUpdate();
     }
 }

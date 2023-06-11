@@ -23,4 +23,8 @@ public class LoadScene : MonoBehaviour
     {
         GameMgr.Instance.SingleGachaCheck();
     }
+    public void PassBtn00()
+    {
+        GameMgr.Instance.PassBtn();
+    }
 }
