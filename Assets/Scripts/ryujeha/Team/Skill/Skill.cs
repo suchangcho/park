@@ -13,27 +13,28 @@ public class Skill : MonoBehaviour
 
     public void SkillS()
     {
-        for(int i = 0; i < skill_Managers.Length; i++){
-            if(Input.GetKeyDown(KeyCode.Q)&& skill_Managers[i].Skill_num == 1  )//1번 스킬이라면
-            {
-                Debug.Log("스킬사용");
-                skill_Managers[i].Skill.gameObject.SetActive(true);
-                if(skill_Managers[i].anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f){
-                    Destroy(skill_Managers[i].Skill);
-                }
-            }
-            else if(skill_Managers[i].Skill_num == 2&& Input.GetKeyDown(KeyCode.W))//1번 스킬이라면
-            {
-                skill_Managers[i].Skill.gameObject.SetActive(true);
-                if(skill_Managers[i].anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 4.0f){
-                    Destroy(skill_Managers[i].Skill);
-                }
-            }
-            else if(skill_Managers[i].Skill_num == 3&& Input.GetKeyDown(KeyCode.E))//1번 스킬이라면
-            {
-                skill_Managers[i].Skill.gameObject.SetActive(true);
-            }
-            
+        if(Input.GetKeyDown(KeyCode.Q))//1번 스킬이라면
+        {
+            For_Moon(1);
+        }
+        else if(Input.GetKeyDown(KeyCode.W))//2번 스킬이라면
+        {
+            For_Moon(2);
+        }
+        else if(Input.GetKeyDown(KeyCode.E))//3번 스킬이라면
+        {
+               For_Moon(3);
         }
     } 
+    public void For_Moon(int _i){
+     for(int i = 0; i< skill_Managers.Length; i++){
+        if(skill_Managers[i].Skill_num == _i ){
+            Debug.Log("스킬사용");
+            skill_Managers[i].Skill.gameObject.SetActive(true);
+                }
+            }
+    }
+    void Update(){
+        SkillS();
+    }
 }

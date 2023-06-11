@@ -16,6 +16,7 @@ public class Input_Manager
         // 어떤 키가 들어왔다면, keyaction에서 이벤트가 발생했음을 전파. 
         if (key_action != null)
         {
+            Debug.Log("체크");
             key_action.Invoke();
 
         }

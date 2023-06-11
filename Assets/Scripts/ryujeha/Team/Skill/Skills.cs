@@ -21,15 +21,13 @@ public class Skills : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(this.gameObject.tag == "Skill_one"){
             if(other.gameObject.tag =="Enemy"){
-            Debug.Log("충돌");
-            other.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.right *1.5f;
-            if(other.gameObject.tag == "Enemy_Tower"){
-                Destroy(this.gameObject);
+                Debug.Log("충돌");
+                other.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.right *1.5f;
+                }
+            else if(other.gameObject.tag == "Enemy_Tower"){
+                    Destroy(this.gameObject);
+                }
             }
         }
-        }
-        
-    }
-
   
 }
