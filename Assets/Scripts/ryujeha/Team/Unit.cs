@@ -9,7 +9,7 @@ public class Unit : MonoBehaviour
     
     Transform team_target_tower;//어디까지 이동할 지에 대한 목표위치받기.
     Transform Mob_target_tower;
-    public Rigidbody2D myrigid;//에너미 객체의 리지드바디.
+    public Rigidbody2D myrigid;// 객체의 리지드바디.
 
     public int Unit_HP;//적의 체력.
     public float Speed;//얼마만큼 속도로 이동시킬지에 대한 변수.

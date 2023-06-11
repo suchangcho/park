@@ -7,12 +7,8 @@ using UnityEngine.UI;
 public class LoadScene : MonoBehaviour
 {
     public string nextScene;
-    public bool tenGacha;
-    public bool singleGacha;
     private void Start()
     {
-        tenGacha = false;
-        singleGacha = false;
         Button btn = GetComponent<Button>();
     }
     public void LoadNextScene()
@@ -26,5 +22,9 @@ public class LoadScene : MonoBehaviour
     public void SingleBtn()
     {
         GameMgr.Instance.SingleGachaCheck();
+    }
+    public void PassBtn00()
+    {
+        GameMgr.Instance.PassBtn();
     }
 }

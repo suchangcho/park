@@ -8,6 +8,9 @@ TagManager:
   - Team_tower
   - Team_Unit
   - Enemy_Tower
+  - Skill_one
+  - Skill_two
+  - Skill_Three
   layers:
   - Default
   - TransparentFX
