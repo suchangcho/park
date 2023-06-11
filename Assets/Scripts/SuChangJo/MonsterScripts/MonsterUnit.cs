@@ -12,7 +12,6 @@ public class MonsterUnit : MonoBehaviour
         Debug.Log(level);
         Debug.Log(Attack);
         Debug.Log(MaxHP);
-
     }
     
 

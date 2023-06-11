@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 515787590}
   - component: {fileID: 515787589}
   m_Layer: 5
-  m_Name: Image
+  m_Name: bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,7 +1082,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000039022943, y: 0}
+  m_AnchoredPosition: {x: -0.0007553669, y: 0}
   m_SizeDelta: {x: 0, y: 536.58}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1818241766
@@ -1138,7 +1138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollbar: {fileID: 917754348}
-  itemPrefab: {fileID: 5260139521572416921, guid: 9f69a696af7925e4cba81874747084f0, type: 3}
+  itemPrefab:
+  - {fileID: 5260139521572416921, guid: 9f69a696af7925e4cba81874747084f0, type: 3}
+  - {fileID: 8426206079723091790, guid: 5895c6de620e701409ee8ce03e212c60, type: 3}
   parents: {fileID: 1818241765}
 --- !u!1 &1947828297
 GameObject:
@@ -1169,8 +1171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0dd6a747b58f604a99c581d097a34ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterUnit: {fileID: 0}
-  monsterHUD: {fileID: 0}
 --- !u!4 &1947828299
 Transform:
   m_ObjectHideFlags: 0

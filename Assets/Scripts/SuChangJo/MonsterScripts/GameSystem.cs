@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class GameSystem : MonoBehaviour
 {
-    [SerializeField] MonsterUnit monsterUnit;
-    [SerializeField] MonsterHUD monsterHUD;
+    //[SerializeField] MonsterUnit monsterUnit;
+    //[SerializeField] MonsterHUD monsterHUD;
 
     
 
     public void Start()
     {
-        //monsterUnit = GetComponent<CharacterUnit>().        
+        //monsterHUD = GameObject.Find("Player").GetComponent<MonsterHUD>();
+        //monsterUnit = GameObject.Find("Player").GetComponent<MonsterUnit>();
     }
 
     public void Update()
     {
-        //monsterHUD.SetData(monsterUnit);
+        
     }
 }

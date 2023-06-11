@@ -9,12 +9,15 @@ public class ScreenManager : MonoBehaviour
     float scroll_pos = 0;
     float[] pos;
     int posisi = 0;
-    public GameObject itemPrefab;
+    public GameObject[] itemPrefab;
     public Transform parents;
 
     public void Start()
     {
-        GameObject MonsterInstance = Instantiate(itemPrefab, parents); // 부모 지정
+        for(int i = 0; i <  itemPrefab.Length; i++)
+        {
+            GameObject MonsterInstance = Instantiate(itemPrefab[i], parents); // 부모 지정
+        }
     }
 
     public void next()
