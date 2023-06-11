@@ -11,6 +11,7 @@ public class GameMgr
 
     public bool tenGacha; //10회뽑
     public bool singleGacha; //1회뽑
+    public List<GachaCard> gachaList = new List<GachaCard>(); //뽑기 결과 담는 리스트
 
     Input_Manager _input = new Input_Manager();
     public static Input_Manager Input{get{return Instance._input;}} 
@@ -56,6 +57,11 @@ public class GameMgr
     {
         tenGacha = false;
         singleGacha = false;
+    }
+    public void AddGachaList(GachaCard card) //뽑기 기록 리스트에 추가하는 함수
+    {
+        gachaList.Add(card);
+        Debug.Log("뽑기 결과 : " + card.cardName);
     }
     private void Update() { //이거 무슨 코드인가요 제하씨 설명필요!!!
         _input.OnUpdate();

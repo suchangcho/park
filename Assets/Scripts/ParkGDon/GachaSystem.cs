@@ -32,6 +32,7 @@ public class GachaSystem : MonoBehaviour
     public void SinglePool()
     {
         GachaCard card = SelectRandomCard(); //랜덤하게 카드 선택
+        GameMgr.Instance.AddGachaList(card); //GameMgr 리스트 추가하는 함수 불러오기
         SpawnCard(card, singlePullCardSpawnPoint.position); //스폰하기
     }
     //열 개 뽑기
@@ -40,7 +41,7 @@ public class GachaSystem : MonoBehaviour
         for (int i = 0; i < 10; i++)
         {
             GachaCard card = SelectRandomCard(); //랜덤하게 카드 선택
-
+            GameMgr.Instance.AddGachaList(card); //GameMgr 리스트 추가하는 함수 불러오기
             //스폰 위치
             if (i < tenPullCardSpawnPoint.Length)
             {
