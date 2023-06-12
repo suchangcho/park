@@ -12,6 +12,7 @@ public class GameMgr
     public bool tenGacha; //10회뽑
     public bool singleGacha; //1회뽑
     public List<GachaCard> gachaList = new List<GachaCard>(); //뽑기 결과 담는 리스트
+    string[] gachaResult = new string[] {"나쁜 몬스터","나쁜 몬스터2","나쁜 몬스터3","나쁜 몬스터4" }; //이걸 만들고 name을 체크해서 만들면 되지 않을까
 
     Input_Manager _input = new Input_Manager();
     public static Input_Manager Input{get{return Instance._input;}} 

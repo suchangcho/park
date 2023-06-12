@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class LoadScene : MonoBehaviour
 {
+    GachaCard card; 
     public string nextScene;
     private void Start()
     {
@@ -26,5 +27,12 @@ public class LoadScene : MonoBehaviour
     public void PassBtn00()
     {
         GameMgr.Instance.PassBtn();
+    }
+    public void SaveCardData()
+    {
+        foreach (GachaCard card in GameMgr.Instance.gachaList)
+        {
+            Debug.Log(card.ToString());
+        }
     }
 }

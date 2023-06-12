@@ -7,6 +7,12 @@ public class GachaCard
 {
     public string grade;     //등급
     public int weight;       //가중치
+    public int cardCount;    //카드 중복 갯수
     public string cardName;  //이름
     public Sprite cardImage; //이미지
+
+    public override string ToString()
+    {
+        return cardName + " 중복 갯수 : " + cardCount.ToString();
+    } 
 }
