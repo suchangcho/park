@@ -9,9 +9,12 @@ public class MonsterHUD : MonoBehaviour
     [SerializeField] Text nameText;
     public Text levelText;
     public MonsterUnit monsterUnit;
+    //public Text PowerUpMoneyText;
+
     public void Update()
     {
         SetData(monsterUnit);
+        //PowerUpMoneyText.text = GameMgr.Instance.PowerMoney.ToString();
     }
 
     // Update is called once per frame

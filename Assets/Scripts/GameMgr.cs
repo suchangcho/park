@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameMgr
 {
@@ -11,6 +12,13 @@ public class GameMgr
 
     public bool tenGacha; //10È¸»Ì
     public bool singleGacha; //1È¸»Ì
+
+    //ÀçÈ­
+    public int BattleMoney = 0;
+    public int PowerMoney = 0;
+    public int GachaMoney = 0;
+
+
     public List<GachaCard> gachaList = new List<GachaCard>(); //»Ì±â °á°ú ´ã´Â ¸®½ºÆ®
 
     Input_Manager _input = new Input_Manager();
