@@ -771,9 +771,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardPool:
-  - grade: S
+  - grade: SS
     weight: 1
-    cardName: "\uAC1C\uCA4C\uB294\uBAAC\uC2A4\uD130"
+    cardName: "\uD658\uC0C1\uC758 \uC5EC\uC6B0"
     cardImage: {fileID: 21300000, guid: 27362f1f5439d974da22ca237036f59f, type: 3}
   - grade: A
     weight: 5
