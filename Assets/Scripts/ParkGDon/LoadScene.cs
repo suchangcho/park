@@ -28,11 +28,4 @@ public class LoadScene : MonoBehaviour
     {
         GameMgr.Instance.PassBtn();
     }
-    public void SaveCardData()
-    {
-        foreach (GachaCard card in GameMgr.Instance.gachaList)
-        {
-            Debug.Log(card.ToString());
-        }
-    }
 }

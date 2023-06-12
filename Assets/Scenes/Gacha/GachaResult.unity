@@ -773,44 +773,56 @@ MonoBehaviour:
   cardPool:
   - grade: SS
     weight: 1
+    cardCount: 0
     cardName: "\uD658\uC0C1\uC758 \uC5EC\uC6B0"
     cardImage: {fileID: 21300000, guid: 27362f1f5439d974da22ca237036f59f, type: 3}
   - grade: A
     weight: 5
+    cardCount: 0
     cardName: "\uC88B\uC740 \uBAAC\uC2A4\uD130"
     cardImage: {fileID: 21300000, guid: 623d150bb5c0a164d8fdf05b5b59ba77, type: 3}
   - grade: B
     weight: 7
+    cardCount: 0
     cardName: "\uAD1C\uCC2E\uC740 \uBAAC\uC2A4\uD130"
     cardImage: {fileID: 21300000, guid: c3de1f4b3da35db45974cc75d5c2a6f9, type: 3}
   - grade: B
     weight: 7
+    cardCount: 0
     cardName: "\uAD1C\uCC2E\uC740 \uBAAC\uC2A4\uD1302"
     cardImage: {fileID: 21300000, guid: e713d0d20dc4b7744bdc7946ef1f1d07, type: 3}
   - grade: C
     weight: 10
+    cardCount: 0
     cardName: "\uD3C9\uADE0 \uBAAC\uC2A4\uD130"
     cardImage: {fileID: 21300000, guid: 6fc49c9a63b64ad459df09d9b2fe6621, type: 3}
   - grade: C
     weight: 10
+    cardCount: 0
     cardName: "\uD3C9\uADE0 \uBAAC\uC2A4\uD1302"
     cardImage: {fileID: 21300000, guid: 1f077d8af4845f343a523d9476da1a99, type: 3}
   - grade: F
     weight: 15
+    cardCount: 0
     cardName: "\uB098\uC05C \uBAAC\uC2A4\uD130"
     cardImage: {fileID: 21300000, guid: c6ee1fe78cac17f47a801fdf675f3be3, type: 3}
   - grade: F
     weight: 15
+    cardCount: 0
     cardName: "\uB098\uC05C \uBAAC\uC2A4\uD1302"
     cardImage: {fileID: 21300000, guid: f4e7c1de63b7ca145a3c2e87973f01af, type: 3}
   - grade: F
     weight: 15
-    cardName: "\uB098\uC05C \uBAAC\uC2A4\uD1303"
+    cardCount: 0
+    cardName: "\uAE4C\uC090\uBC14\uB77C"
     cardImage: {fileID: 21300000, guid: 2462603bebb908b4baf59acad8ab74f7, type: 3}
   - grade: F
     weight: 15
-    cardName: "\uB098\uC05C \uBAAC\uC2A4\uD1304"
+    cardCount: 0
+    cardName: "\uB8E1\uB8E1\uC774"
     cardImage: {fileID: 21300000, guid: ec042918791bb8d4b8b9a5903274664a, type: 3}
+  bookImages: []
+  bookImageNames: []
   singlePullCardSpawnPoint: {fileID: 343036634}
   tenPullCardSpawnPoint:
   - {fileID: 2094672722}

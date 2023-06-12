@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,13 +15,13 @@ public class GameMgr
     public bool singleGacha; //1회뽑
 
     //재화
-    public int BattleMoney = 0;
-    public int PowerMoney = 0;
-    public int GachaMoney = 0;
+    public int BattleMoney = 0; //전투내에서 사용되는 재화
+    public int PowerMoney = 0;  //업그레이드에 사용되는 재화
+    public int GachaMoney = 0;  //뽑기에 사용되는 재화
 
 
     public List<GachaCard> gachaList = new List<GachaCard>(); //뽑기 결과 담는 리스트
-    string[] gachaResult = new string[] {"나쁜 몬스터","나쁜 몬스터2","나쁜 몬스터3","나쁜 몬스터4" }; //이걸 만들고 name을 체크해서 만들면 되지 않을까
+    public string gachaName;
 
     Input_Manager _input = new Input_Manager();
     public static Input_Manager Input{get{return Instance._input;}} 
@@ -67,10 +68,14 @@ public class GameMgr
         tenGacha = false;
         singleGacha = false;
     }
-    public void AddGachaList(GachaCard card) //뽑기 기록 리스트에 추가하는 함수
+    public void AddGachaList(GachaCard card) //뽑기 기록 출력하기 테스트
     {
         gachaList.Add(card);
         Debug.Log("뽑기 결과 : " + card.cardName);
+    }
+    public void test11(GachaCard card)
+    {
+        gachaName = card.cardName;
     }
     private void Update() { //이거 무슨 코드인가요 제하씨 설명필요!!!
         _input.OnUpdate();

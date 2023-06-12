@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GachaSystem : MonoBehaviour
 {
     public List<GachaCard> cardPool = new List<GachaCard>(); //뽑기에 사용될 카드 뽑기
+    public Image[] bookImages;                               //도감 이미지들
+    public string[] bookImageNames;                          //도감 이미지들 이름 정하기 위한 배열
 
     //각 뽑기 스폰 위치
-    public Transform singlePullCardSpawnPoint;
-    public Transform[] tenPullCardSpawnPoint;
+    public Transform singlePullCardSpawnPoint;               //1회뽑 위치
+    public Transform[] tenPullCardSpawnPoint;                //10회뽑 위치
 
     //카드와 GachaUI 프리팹
     public Transform UiCanvas;
@@ -17,7 +21,6 @@ public class GachaSystem : MonoBehaviour
 
     private void Start()
     {
-        //GameMgr.Instance.GachaCheck(); //정상적으로 체크 되었는지 확인 (임시임)
         if (GameMgr.Instance.tenGacha == true) //만약 10회가 활성화 되었다면?
         {
             TenPool(); //10회뽑 함수 출력
@@ -33,7 +36,7 @@ public class GachaSystem : MonoBehaviour
     {
         GachaCard card = SelectRandomCard(); //랜덤하게 카드 선택
         GameMgr.Instance.AddGachaList(card); //GameMgr 리스트 추가하는 함수 불러오기
-        card.cardCount++;
+        GameMgr.Instance.test11(card);
         SpawnCard(card, singlePullCardSpawnPoint.position); //스폰하기
     }
     //열 개 뽑기
@@ -43,7 +46,7 @@ public class GachaSystem : MonoBehaviour
         {
             GachaCard card = SelectRandomCard(); //랜덤하게 카드 선택
             GameMgr.Instance.AddGachaList(card); //GameMgr 리스트 추가하는 함수 불러오기
-            card.cardCount++;
+            GameMgr.Instance.test11(card); //임시 테스트
             //스폰 위치
             if (i < tenPullCardSpawnPoint.Length)
             {
@@ -87,4 +90,5 @@ public class GachaSystem : MonoBehaviour
         }
         return null;
     }
+ 
 }
