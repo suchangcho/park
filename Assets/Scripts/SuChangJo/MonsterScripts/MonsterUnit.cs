@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MonsterUnit : MonoBehaviour
 {
     public MonsterBase _base;
     public int level;
+    
     public void PowerUp()
     {
         level += 1;

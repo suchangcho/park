@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameMgr
 {
@@ -11,6 +12,13 @@ public class GameMgr
 
     public bool tenGacha; //10회뽑
     public bool singleGacha; //1회뽑
+
+    //재화
+    public int BattleMoney = 0;
+    public int PowerMoney = 0;
+    public int GachaMoney = 0;
+
+
     public List<GachaCard> gachaList = new List<GachaCard>(); //뽑기 결과 담는 리스트
     string[] gachaResult = new string[] {"나쁜 몬스터","나쁜 몬스터2","나쁜 몬스터3","나쁜 몬스터4" }; //이걸 만들고 name을 체크해서 만들면 되지 않을까
 
