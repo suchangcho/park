@@ -7,6 +7,4 @@ public class Skill_Manager{
     public int Skill_num;//스킬의 넘버.(구별용)
     public string Skill_name;//스킬이름
     public GameObject Skill;//스킬 객체
-    public Animator anim;
-
 }

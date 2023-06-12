@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-
     public Animator Unit_anim;//에너미의 에니메이터 각각 다르게 넣어줘야함.
     
-    Transform team_target_tower;//어디까지 이동할 지에 대한 목표위치받기.
-    Transform Mob_target_tower;
+   public Transform team_target_tower;//어디까지 이동할 지에 대한 목표위치받기.
+   public Transform Mob_target_tower;
     public Rigidbody2D myrigid;// 객체의 리지드바디.
 
     public int Unit_HP;//적의 체력.
@@ -17,10 +16,13 @@ public class Unit : MonoBehaviour
     public float Unit_Atk_cool;//적 공속 쿨다운
     public int Unit_Atk_Speed;//적의 공격속도 기준
 
-    bool is_Attack;//공격 여부(공격을 해야하는 경우 제자리의 멈춰서 공격해야하기때문에)
+   public bool is_Attack;//공격 여부(공격을 해야하는 경우 제자리의 멈춰서 공격해야하기때문에)
+   public bool is_stop;
 
+   public bool is_Half;//맵의 반을 넘었는가를 판단하는 변수
     public GameObject Target;//레이캐스트에서 감지할 객체변수.
     Vector3 ray;//쏠 레이캐스트의 방향.
+    Transform Half_Line;
     void Start()
     {
         team_target_tower = GameObject.FindWithTag("Enemy_Tower").transform;//적군은 팀타워까지 이동해야하므로 팀타워객체를 찾아서 타겟으로 지정.
@@ -36,8 +38,16 @@ public class Unit : MonoBehaviour
         Attack_cool();
     }
     void Ray_Judgement()
-    {
+    {   
+        if(gameObject.transform.position.x <= 0){
+            is_Half = true;
+        }
+        if(!is_stop){
             is_Attack = false;
+        }
+        else{
+            is_Attack = true;
+        }
             if(this.gameObject.tag == "Enemy"){
                 ray = new Vector3(-0.5f, 0, 0);
                 Debug.DrawRay(myrigid.position, ray * -0.5f, new Color(0, 1, 0));
@@ -136,6 +146,7 @@ public class Unit : MonoBehaviour
         {
            //Unit_anim.SetTrigger("Dead");
             Destroy(this.gameObject);
+            
         }
     }
 }

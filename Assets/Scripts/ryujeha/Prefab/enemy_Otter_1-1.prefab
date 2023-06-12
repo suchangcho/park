@@ -111,7 +111,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.88, y: 0.85}
-  m_EdgeRadius: 1
+  m_EdgeRadius: 0.1
 --- !u!50 &504595168129437720
 Rigidbody2D:
   serializedVersion: 4
@@ -167,10 +167,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Unit_anim: {fileID: 6369835282516637798}
+  team_target_tower: {fileID: 0}
+  Mob_target_tower: {fileID: 0}
   myrigid: {fileID: 504595168129437720}
   Unit_HP: 200
   Speed: 1
   Unit_Atk: 50
   Unit_Atk_cool: 0
   Unit_Atk_Speed: 1
+  is_Attack: 0
   Target: {fileID: 0}
