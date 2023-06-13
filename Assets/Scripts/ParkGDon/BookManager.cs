@@ -5,26 +5,26 @@ using System.Linq;
 
 public class BookManager : MonoBehaviour
 {
-    List<BookSetActive> words = new List<BookSetActive>(); //bookSetActive의 정보를 담을 리스트
+    List<BookSetActive> wordList = new List<BookSetActive>(); //bookSetActive의 정보를 담을 리스트
     private void Start()
     {
-        BookSetActive bookName = GameObject.Find("Set").GetComponent<BookSetActive>();
-        words.Add(bookName);
-        Debug.Log(words);
-    }
-
-    public void BookLinq()
-    {/*
-        IEnumerable<string> bName = from word in words
-                                    where word.bookName == GameMgr.Instance.gachaName
-                                    select word;
-
-        foreach (string str in bName)
+        wordList = FindObjectsOfType<BookSetActive>().ToList();
+        foreach(BookSetActive bookItem in wordList)
         {
-
+            if (GameMgr.Instance.gachaList.Find(x => x.cardName == bookItem.bookName) != null)
+            {
+                bookItem.gameObject.SetActive(true);
+            }
+            else
+            {
+                bookItem.gameObject.SetActive(false);
+            }
         }
-        */
-        
-
     }
+    /*
+    public void FindBook(string name)
+    {
+        wordList.Find(x => x.bookName == name);
+    }
+    */
 }
