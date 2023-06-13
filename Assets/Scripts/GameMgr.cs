@@ -21,7 +21,7 @@ public class GameMgr
 
 
     public List<GachaCard> gachaList = new List<GachaCard>(); //뽑기 결과 담는 리스트
-    public string gachaName;
+    public string gachaName;                                  //뽑은 애 이름
 
     Input_Manager _input = new Input_Manager();
     public static Input_Manager Input{get{return Instance._input;}} 

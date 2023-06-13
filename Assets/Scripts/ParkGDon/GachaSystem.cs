@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class GachaSystem : MonoBehaviour
 {
     public List<GachaCard> cardPool = new List<GachaCard>(); //뽑기에 사용될 카드 뽑기
-    public Image[] bookImages;                               //도감 이미지들
-    public string[] bookImageNames;                          //도감 이미지들 이름 정하기 위한 배열
 
     //각 뽑기 스폰 위치
     public Transform singlePullCardSpawnPoint;               //1회뽑 위치
@@ -48,7 +46,7 @@ public class GachaSystem : MonoBehaviour
             GameMgr.Instance.AddGachaList(card); //GameMgr 리스트 추가하는 함수 불러오기
             GameMgr.Instance.test11(card); //임시 테스트
             //스폰 위치
-            if (i < tenPullCardSpawnPoint.Length)
+            if (i < tenPullCardSpawnPoint.Length) //배열을 넘지 않을때까지만
             {
                 SpawnCard(card, tenPullCardSpawnPoint[i].position); //스폰
             }
@@ -68,6 +66,7 @@ public class GachaSystem : MonoBehaviour
     }
     //랜덤하게 카드 뽑기.
     private GachaCard SelectRandomCard()
+
     {
         int totalWeight = 0;
 
