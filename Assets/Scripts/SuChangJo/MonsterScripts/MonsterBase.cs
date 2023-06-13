@@ -13,11 +13,11 @@ public class MonsterBase : ScriptableObject
 
     public Sprite monster; //몬스터 사진
 
-
     public int maxHp;//최대 체력
     public int attack;//공격력
     public int attackSpeed; //공격속도
     public int speed; //스피드
+
 
     public string Name
     {

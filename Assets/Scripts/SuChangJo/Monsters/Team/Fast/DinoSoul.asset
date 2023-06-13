@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c6a36b4166f184aa4e89ba82ff3b68, type: 3}
+  m_Name: DinoSoul
+  m_EditorClassIdentifier: 
+  name: "\uB2E4\uC774\uB178\uC18C\uC6B8"
+  description: 
+  monster: {fileID: 0}
+  maxHp: 180
+  attack: 30
+  attackSpeed: 15
+  speed: 35
