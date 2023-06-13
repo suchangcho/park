@@ -4,15 +4,12 @@ using UnityEngine;
 using System.Linq;
 public class Skills : MonoBehaviour
 {
-    
-Vector3 ray;//쏠 레이캐스트의 방향.
-int ray_num;
  public int Speed;
  int j=0; 
-    public GameObject[] Mob_List;//추후 딕셔너리로 수정
-    public List<GameObject> Target_List_Origin = new List<GameObject>();//적들을 담을 원본리스트
-    public List<GameObject> Target_List_Sort= new List<GameObject>();//적들을 담을 정렬 후 리스트
-    int i = 0;
+    public List<GameObject> Mob_List = new List<GameObject>();//추후 딕셔너리로 수정
+    
+    [SerializeField] List<int> Target_List_Origin = new List<int>();//적들을 담을 원본리스트
+    [SerializeField] List<int> Target_List_Sort= new List<int>();//적들을 담을 정렬 후 리스트
     // Start is called before the first frame update
     void Start()
     {
@@ -42,55 +39,45 @@ int ray_num;
             if(other.gameObject.tag =="Enemy"){
                     Debug.Log("벽 충돌");
                     if(other.gameObject.GetComponent<Unit>().is_Half == true){
-                        other.gameObject.transform.position = new Vector2(-1.7f,-3.7f);
-                        Sort(other);
+                        other.gameObject.transform.position = new Vector2(-2.3f,-3.7f);
+                         other.gameObject.GetComponent<Unit>().is_stop = false;
+                        Mob_List.Add(other.gameObject);
+                        Mob_List = Mob_List.Distinct().ToList();
                     }
                     else{
                         other.gameObject.transform.position = new Vector2(1.7f,-3.7f);
                         other.gameObject.GetComponent<Unit>().is_stop = true;//부딧힌 객체만 이동막기.
-                        Sort(other);
+                        Mob_List.Add(other.gameObject);
+                        Mob_List = Mob_List.Distinct().ToList();
                     }
                     
                 }
             }
     }
     void Skill_Three(){
-         ray = new Vector3(0.5f, 0, 0);
-         Debug.DrawRay(this.gameObject.transform.position, ray * 10f, new Color(0, 1, 0));
-                RaycastHit2D rayhit = Physics2D.Raycast(this.gameObject.transform.position, ray, 10f, LayerMask.GetMask("Enemy"));
-                if (rayhit.collider != null)
+        if(this.gameObject.tag == "Skill_Three"){
+             for(int i =0; i <Skill.Mob_List.Count;i++)
                 {
-                    Target_List_Origin.Add(rayhit.collider.gameObject);
+                      Target_List_Origin.Add(Mob_List[i].GetComponent<Unit>().Unit_HP); 
                 }
-        //Target_List_Sort = Target_List_Origin.Where(GetComponent<Unit>().Unit_HP / 100 < 0);
-         if(this.gameObject.tag == "Skill_Three"){
-          
+            Target_List_Sort = Target_List_Origin.OrderByDescending(x => x).ToList();
+                for(int a =0; a<Skill.Mob_List.Count;a++){
+                    if(Target_List_Sort[0] == Skill.Mob_List[a].GetComponent<Unit>().Unit_HP){
+                        this.gameObject.transform.position=Vector2.MoveTowards(this.gameObject.transform.position,
+                        new Vector2(Skill.Mob_List[a].gameObject.transform.position.x,Skill.Mob_List[a].gameObject.transform.position.y),this.Speed * Time.deltaTime);
+                }
+            }
         }
     }
-    void Sort(Collider2D other){
-        for(int s=0;s<Mob_List.Length;s++){
-                       if(Mob_List[s] != other.gameObject){
-                            for(int j =0;j<Mob_List.Length;j++){
-                                if(other.gameObject != Mob_List[j]){
-                                    Mob_List[s] = other.gameObject;
-                                }
-                                else if(other.gameObject == Mob_List[j]){
-                                    Mob_List[j] = null;
-                                    Mob_List[s] = other.gameObject;
-                                }
-                            }
-                        }
-                    }
-    }
-
     public void Destroy_Skill(){
-        for(int i =0;i< Mob_List.Length;i++){
-            if(Mob_List[i] != null){
-                 Mob_List[i].gameObject.GetComponent<Unit>().is_stop = false;//전체 이동 가능하게함
-            }
-            else{
+        for(int i =0; i < Mob_List.Count;i++)
+        {
+            if(Mob_List[i] == null){
                 continue;
             }
+            Debug.Log("반복중");
+            Mob_List[i].gameObject.GetComponent<Unit>().is_stop = false;//전체 이동 가능하게함
+            
         }
         Destroy(this.gameObject);
     }

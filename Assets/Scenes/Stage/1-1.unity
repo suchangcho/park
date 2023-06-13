@@ -459,6 +459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tower_MaxHp: 9999
   Tower_Current_Hp: 0
+  hp: 0
   Hp_Txt: {fileID: 663807369}
 --- !u!1 &302577304
 GameObject:
@@ -611,8 +612,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 5
   Mob_List: []
-  Target_List_Origin: []
-  Target_List_Sort: []
+  Target_List_Origin: 
+  Target_List_Sort: 
 --- !u!1 &306034210
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,7 +903,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d00c1130ff0f25540be4dbf39742c4b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1009,8 +1010,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  Target_List_Origin: []
-  Target_List_Sort: []
+  Target_List_Origin: 
+  Target_List_Sort: 
 --- !u!1 &567005877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,14 +1418,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055756997}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 8.5, y: 0.7714285, z: 0}
+  m_LocalScale: {x: 1, y: 0.28571427, z: 1}
   m_Children:
   - {fileID: 2039998802}
   - {fileID: 514477419}
   - {fileID: 302577305}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  - {fileID: 1721511126}
+  m_Father: {fileID: 1993154749}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1640868408
 GameObject:
@@ -1572,8 +1574,8 @@ MonoBehaviour:
     Skill_name: "\uBCBD"
     Skill: {fileID: 514477415}
   - Skill_num: 3
-    Skill_name: 
-    Skill: {fileID: 0}
+    Skill_name: "\uCCB4\uB825\uC774 \uAC00\uC7A5\uC801\uC740\uC801 \uCC98\uCE58."
+    Skill: {fileID: 302577304}
 --- !u!4 &1721511126
 Transform:
   m_ObjectHideFlags: 0
@@ -1581,12 +1583,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721511124}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7917795, y: -3.6999998, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.7917795, y: -3.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1055756998}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1770243265
 GameObject:
@@ -1904,7 +1906,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.5, y: -2.7, z: 0}
   m_LocalScale: {x: 1, y: 3.5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1055756998}
   m_Father: {fileID: 1891139261}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1999,6 +2002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tower_MaxHp: 9999
   Tower_Current_Hp: 0
+  hp: 0
   Hp_Txt: {fileID: 1802248269}
 --- !u!114 &1993154753
 MonoBehaviour:
@@ -2145,8 +2149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 5
   Mob_List: []
-  Target_List_Origin: []
-  Target_List_Sort: []
+  Target_List_Origin: 
+  Target_List_Sort: 
 --- !u!50 &2039998804
 Rigidbody2D:
   serializedVersion: 4
