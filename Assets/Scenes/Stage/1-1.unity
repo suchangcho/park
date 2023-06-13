@@ -540,7 +540,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ae10871991dad5549b7c35a4e7b93a02, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58bdd3dc2d88713408b5371a82d498a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -589,7 +589,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.6, y: 3.6}
+    oldSize: {x: 5, y: 5}
     newSize: {x: 3.6, y: 3.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
-  Mob_List: []
+  Mob_List_Wall: []
   Target_List_Origin: 
   Target_List_Sort: 
 --- !u!1 &306034210
@@ -994,22 +994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 0
-  Mob_List:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  Mob_List_Wall: []
   Target_List_Origin: 
   Target_List_Sort: 
 --- !u!1 &567005877
@@ -1576,6 +1561,7 @@ MonoBehaviour:
   - Skill_num: 3
     Skill_name: "\uCCB4\uB825\uC774 \uAC00\uC7A5\uC801\uC740\uC801 \uCC98\uCE58."
     Skill: {fileID: 302577304}
+  Mob_List: []
 --- !u!4 &1721511126
 Transform:
   m_ObjectHideFlags: 0
@@ -2148,7 +2134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
-  Mob_List: []
+  Mob_List_Wall: []
   Target_List_Origin: 
   Target_List_Sort: 
 --- !u!50 &2039998804

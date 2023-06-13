@@ -6,7 +6,7 @@ public class Skill : MonoBehaviour
 {
     [SerializeField] Skill_Manager[] skill_Managers;
 
-   [SerializeField] public static List<GameObject> Mob_List= new List<GameObject>();//적들을 담을 정렬 후 리스트
+   [SerializeField] public List<GameObject> Mob_List= new List<GameObject>();//적들을 담을 정렬 후 리스트
      Vector2 ray_start =new Vector2(-8.7f,-3.7f);
     Vector3 ray;//쏠 레이캐스트의 방향.
     void Start() {
@@ -52,7 +52,6 @@ public class Skill : MonoBehaviour
                 {
                     Mob_List.Add(rayhit.collider.gameObject);
                     Mob_List = Mob_List.Distinct().ToList();
-                   
                 }
             else
                 {

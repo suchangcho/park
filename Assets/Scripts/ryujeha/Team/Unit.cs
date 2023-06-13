@@ -140,7 +140,7 @@ public class Unit : MonoBehaviour
         }
     }
 
-    void Dead()
+   public void Dead()
     {
         if (Unit_HP <= 0)//적의 체력이 0으로 내려가게되면.
         {

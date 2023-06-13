@@ -6,14 +6,15 @@ public class Skills : MonoBehaviour
 {
  public int Speed;
  int j=0; 
-    public List<GameObject> Mob_List = new List<GameObject>();//추후 딕셔너리로 수정
+    public List<GameObject> Mob_List_Wall = new List<GameObject>();//추후 딕셔너리로 수정
     
     [SerializeField] List<int> Target_List_Origin = new List<int>();//적들을 담을 원본리스트
     [SerializeField] List<int> Target_List_Sort= new List<int>();//적들을 담을 정렬 후 리스트
+    Skill skil;
     // Start is called before the first frame update
     void Start()
     {
-     
+      skil = FindObjectOfType<Skill>();
     }
 
     // Update is called once per frame
@@ -41,14 +42,14 @@ public class Skills : MonoBehaviour
                     if(other.gameObject.GetComponent<Unit>().is_Half == true){
                         other.gameObject.transform.position = new Vector2(-2.3f,-3.7f);
                          other.gameObject.GetComponent<Unit>().is_stop = false;
-                        Mob_List.Add(other.gameObject);
-                        Mob_List = Mob_List.Distinct().ToList();
+                        Mob_List_Wall.Add(other.gameObject);
+                        Mob_List_Wall = Mob_List_Wall.Distinct().ToList();
                     }
                     else{
                         other.gameObject.transform.position = new Vector2(1.7f,-3.7f);
                         other.gameObject.GetComponent<Unit>().is_stop = true;//부딧힌 객체만 이동막기.
-                        Mob_List.Add(other.gameObject);
-                        Mob_List = Mob_List.Distinct().ToList();
+                        Mob_List_Wall.Add(other.gameObject);
+                        Mob_List_Wall = Mob_List_Wall.Distinct().ToList();
                     }
                     
                 }
@@ -56,27 +57,31 @@ public class Skills : MonoBehaviour
     }
     void Skill_Three(){
         if(this.gameObject.tag == "Skill_Three"){
-             for(int i =0; i <Skill.Mob_List.Count;i++)
+             for(int i =0; i <skil.Mob_List.Count;i++)
                 {
-                      Target_List_Origin.Add(Mob_List[i].GetComponent<Unit>().Unit_HP); 
+                      Target_List_Origin.Add(skil.Mob_List[i].GetComponent<Unit>().Unit_HP); 
                 }
+            Target_List_Sort = Target_List_Sort.Distinct().ToList();
             Target_List_Sort = Target_List_Origin.OrderByDescending(x => x).ToList();
-                for(int a =0; a<Skill.Mob_List.Count;a++){
-                    if(Target_List_Sort[0] == Skill.Mob_List[a].GetComponent<Unit>().Unit_HP){
+            
+                for(int a =0; a<skil.Mob_List.Count;a++){
+                    if(Target_List_Sort[0] == skil.Mob_List[a].GetComponent<Unit>().Unit_HP){
                         this.gameObject.transform.position=Vector2.MoveTowards(this.gameObject.transform.position,
-                        new Vector2(Skill.Mob_List[a].gameObject.transform.position.x,Skill.Mob_List[a].gameObject.transform.position.y),this.Speed * Time.deltaTime);
+                        new Vector2(skil.Mob_List[a].gameObject.transform.position.x,skil.Mob_List[a].gameObject.transform.position.y),this.Speed * Time.deltaTime);
+                        skil.Mob_List[a].GetComponent<Unit>().Dead();
                 }
+                Destroy(this.gameObject);
             }
         }
     }
     public void Destroy_Skill(){
-        for(int i =0; i < Mob_List.Count;i++)
+        for(int i =0; i < Mob_List_Wall.Count;i++)
         {
-            if(Mob_List[i] == null){
+            if(Mob_List_Wall[i] == null){
                 continue;
             }
             Debug.Log("반복중");
-            Mob_List[i].gameObject.GetComponent<Unit>().is_stop = false;//전체 이동 가능하게함
+            Mob_List_Wall[i].gameObject.GetComponent<Unit>().is_stop = false;//전체 이동 가능하게함
             
         }
         Destroy(this.gameObject);
