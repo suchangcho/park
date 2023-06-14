@@ -773,56 +773,52 @@ MonoBehaviour:
   cardPool:
   - grade: SS
     weight: 1
-    cardCount: 0
-    cardName: "\uD658\uC0C1\uC758 \uC5EC\uC6B0"
+    cardName: "\uC544\uC6B0\uB85C\uB77C"
     cardImage: {fileID: 21300000, guid: 27362f1f5439d974da22ca237036f59f, type: 3}
   - grade: A
     weight: 5
-    cardCount: 0
-    cardName: "\uC88B\uC740 \uBAAC\uC2A4\uD130"
+    cardName: "\uB4DC\uB984\uC774"
     cardImage: {fileID: 21300000, guid: 623d150bb5c0a164d8fdf05b5b59ba77, type: 3}
-  - grade: B
+  - grade: A
     weight: 7
-    cardCount: 0
-    cardName: "\uAD1C\uCC2E\uC740 \uBAAC\uC2A4\uD130"
+    cardName: "\uB0E5\uBBF8\uB204"
     cardImage: {fileID: 21300000, guid: c3de1f4b3da35db45974cc75d5c2a6f9, type: 3}
-  - grade: B
+  - grade: A
     weight: 7
-    cardCount: 0
-    cardName: "\uAD1C\uCC2E\uC740 \uBAAC\uC2A4\uD1302"
+    cardName: "\uC874\uC591\uC774"
     cardImage: {fileID: 21300000, guid: e713d0d20dc4b7744bdc7946ef1f1d07, type: 3}
-  - grade: C
+  - grade: A
     weight: 10
-    cardCount: 0
-    cardName: "\uD3C9\uADE0 \uBAAC\uC2A4\uD130"
+    cardName: "\uB0A0\uAC78\uC774"
     cardImage: {fileID: 21300000, guid: 6fc49c9a63b64ad459df09d9b2fe6621, type: 3}
-  - grade: C
+  - grade: B
     weight: 10
-    cardCount: 0
-    cardName: "\uD3C9\uADE0 \uBAAC\uC2A4\uD1302"
+    cardName: "\uB85C\uBCF4\uAC74\uB2E4\uC784"
     cardImage: {fileID: 21300000, guid: 1f077d8af4845f343a523d9476da1a99, type: 3}
-  - grade: F
+  - grade: B
     weight: 15
-    cardCount: 0
-    cardName: "\uB098\uC05C \uBAAC\uC2A4\uD130"
+    cardName: "\uD15F\uCE74\uC789"
     cardImage: {fileID: 21300000, guid: c6ee1fe78cac17f47a801fdf675f3be3, type: 3}
-  - grade: F
+  - grade: C
     weight: 15
-    cardCount: 0
-    cardName: "\uB098\uC05C \uBAAC\uC2A4\uD1302"
+    cardName: "\uB2E4\uC774\uB178\uC18C\uC6B8"
     cardImage: {fileID: 21300000, guid: f4e7c1de63b7ca145a3c2e87973f01af, type: 3}
-  - grade: F
+  - grade: C
     weight: 15
-    cardCount: 0
-    cardName: "\uAE4C\uC090\uBC14\uB77C"
+    cardName: "\uACE0\uD074\uB9B0\uC655"
     cardImage: {fileID: 21300000, guid: 2462603bebb908b4baf59acad8ab74f7, type: 3}
   - grade: F
     weight: 15
-    cardCount: 0
-    cardName: "\uB8E1\uB8E1\uC774"
+    cardName: "\uBCA0\uC774\uC5BC"
     cardImage: {fileID: 21300000, guid: ec042918791bb8d4b8b9a5903274664a, type: 3}
-  bookImages: []
-  bookImageNames: []
+  - grade: F
+    weight: 15
+    cardName: "\uBBF8\uB178\uD32C\uD2F0"
+    cardImage: {fileID: 21300000, guid: ec042918791bb8d4b8b9a5903274664a, type: 3}
+  - grade: F
+    weight: 15
+    cardName: "\uCE74\uC54C\uD53C\uBC14\uB77C"
+    cardImage: {fileID: 21300000, guid: ec042918791bb8d4b8b9a5903274664a, type: 3}
   singlePullCardSpawnPoint: {fileID: 343036634}
   tenPullCardSpawnPoint:
   - {fileID: 2094672722}
