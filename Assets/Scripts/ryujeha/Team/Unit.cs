@@ -42,6 +42,9 @@ public class Unit : MonoBehaviour
         if(gameObject.transform.position.x <= 0){
             is_Half = true;
         }
+        else if(gameObject.transform.position.x >= 0){
+            is_Half = false;
+        }
         if(!is_stop){
             is_Attack = false;
         }
@@ -146,7 +149,6 @@ public class Unit : MonoBehaviour
         {
            //Unit_anim.SetTrigger("Dead");
             Destroy(this.gameObject);
-            
         }
     }
 }

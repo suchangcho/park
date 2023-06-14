@@ -52,6 +52,13 @@ public class Skill : MonoBehaviour
                 {
                     Mob_List.Add(rayhit.collider.gameObject);
                     Mob_List = Mob_List.Distinct().ToList();
+                    for(int i =0; i<Mob_List.Count;i++){
+                        if(Mob_List[i] == null){
+                            Mob_List.RemoveAt(i);
+                        }
+                    }  
+                            
+                        
                 }
             else
                 {
