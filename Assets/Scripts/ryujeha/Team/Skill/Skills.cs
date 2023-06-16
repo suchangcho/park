@@ -64,22 +64,31 @@ public class Skills : MonoBehaviour
                 }
             }
     }
+    public void mob_list_add(List<GameObject> Mob_List){
+        for(int i =0; i <Mob_List.Count;i++)
+        {
+            Target_List_Origin.Add(Mob_List[i].GetComponent<Unit>().Unit_HP);
+        }
+    }
     void Skill_Three(){
         if(this.gameObject.tag == "Skill_Three"){
-             for(int i =0; i <skil.Mob_List.Count;i++)
-                {
-                      Target_List_Origin.Add(skil.Mob_List[i].GetComponent<Unit>().Unit_HP); 
-                }
-            Target_List_Sort = Target_List_Sort.Distinct().ToList();
-            Target_List_Sort = Target_List_Origin.OrderByDescending(x => x).ToList();
-            
+            try
+            {
+                Target_List_Sort = Target_List_Sort.Distinct().ToList();
+                Target_List_Sort = Target_List_Origin.OrderByDescending(x => x).ToList();
+                
                 for(int a =0; a<skil.Mob_List.Count;a++){
                     if(Target_List_Sort[0] == skil.Mob_List[a].GetComponent<Unit>().Unit_HP){
                         this.gameObject.transform.position=Vector2.MoveTowards(this.gameObject.transform.position,
                         new Vector2(skil.Mob_List[a].gameObject.transform.position.x,skil.Mob_List[a].gameObject.transform.position.y),this.Speed * Time.deltaTime);
                     }
-                    
+                }
             }
+            catch (System.Exception)
+            {
+                Destroy(this.gameObject);
+            }
+
         }
     }
 

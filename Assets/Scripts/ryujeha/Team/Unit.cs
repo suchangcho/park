@@ -69,10 +69,12 @@ public class Unit : MonoBehaviour
                 ray = new Vector3(0.5f, 0, 0);
                 Debug.DrawRay(myrigid.position, ray * 0.5f, new Color(0, 1, 0));
                 RaycastHit2D rayhit = Physics2D.Raycast(myrigid.position, ray, 0.5f, LayerMask.GetMask("Enemy"));
-                 if (rayhit.collider != null)
+                if (rayhit.collider != null)
                 {
-                    Target = rayhit.collider.gameObject;
-                    Attack(Target);
+                    if(rayhit.collider.gameObject.tag == "Enemy"){
+                        Target = rayhit.collider.gameObject;
+                        Attack(Target);
+                    }
                 }
                 else
                 {

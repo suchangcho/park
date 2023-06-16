@@ -13,7 +13,7 @@ public class Skill : MonoBehaviour
         GameMgr.Input.key_action -= SkillS;
         GameMgr.Input.key_action += SkillS;
     }
-
+    public GameObject boom;
     
 
     public void SkillS()
@@ -28,9 +28,19 @@ public class Skill : MonoBehaviour
         }
         else if(Input.GetKeyDown(KeyCode.E))//3번 스킬이라면
         {
-               For_Moon(3);
+            for(int i = 0; i< skill_Managers.Length; i++){
+                if(skill_Managers[i].Skill_num == 3 ){
+                    Debug.Log("스킬사용");
+                    boom = Instantiate(skill_Managers[i].Skill.gameObject);
+                    Ray();
+                    boom.GetComponent<Skills>().mob_list_add(Mob_List);
+                }
+            }
         }
     } 
+
+
+
     public void For_Moon(int _i){
      for(int i = 0; i< skill_Managers.Length; i++){
         if(skill_Managers[i].Skill_num == _i ){
@@ -40,23 +50,24 @@ public class Skill : MonoBehaviour
             }
     }
     void Update(){
-        Ray();
         SkillS();
     }
 
-    void Ray(){
+    public void Ray(){
              ray = new Vector3(0.5f, 0, 0);
             Debug.DrawRay(ray_start, ray * 35f, new Color(0, 1, 0));
             RaycastHit2D rayhit = Physics2D.Raycast(ray_start, ray, 35f, LayerMask.GetMask("Enemy"));
             if (rayhit.collider != null)
                 {
-                    Mob_List.Add(rayhit.collider.gameObject);
-                    Mob_List = Mob_List.Distinct().ToList();
-                    for(int i =0; i<Mob_List.Count;i++){
-                        if(Mob_List[i] == null){
-                            Mob_List.RemoveAt(i);
-                        }
-                    }  
+                    if(rayhit.collider.gameObject.name != "Enemy_Tower"){
+                        Mob_List.Add(rayhit.collider.gameObject);
+                        Mob_List = Mob_List.Distinct().ToList();
+                        for(int i =0; i<Mob_List.Count;i++){
+                            if(Mob_List[i] == null){
+                                Mob_List.RemoveAt(i);
+                            }
+                        } 
+                    }
                             
                         
                 }
