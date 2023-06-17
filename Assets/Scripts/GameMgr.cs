@@ -24,9 +24,9 @@ public class GameMgr
     public string gachaName;                                  //뽑은 애 이름
 
     Input_Manager _input = new Input_Manager();
-    public static Input_Manager Input{get{return Instance._input;}} 
+    public static Input_Manager Input { get { return Instance._input; } }
 
-   
+
 
     //게임 매니저 인스턴스에 접근할 수 있는 프로퍼티. static이므로 다른 클래스에서 맘껏 호출할 수 있다.
     public static GameMgr Instance
@@ -47,10 +47,12 @@ public class GameMgr
     public void TenGachaCheck() //가챠 10회뽑 체크
     {
         tenGacha = true;
+        GachaMoney -= 1600;
     }
     public void SingleGachaCheck() //가챠 1회뽑 체크
     {
         singleGacha = true;
+        GachaMoney -= 160;
     }
     public void GachaCheck() //10회냐 1회냐? 체크
     {
@@ -58,10 +60,15 @@ public class GameMgr
         {
             Debug.Log("10회뽑");
         }
-        else if(singleGacha == true)
+        else if (singleGacha == true)
         {
             Debug.Log("1회뽑");
         }
+
+}
+public void chestBtn()
+    {
+        GachaMoney += 999;
     }
     public void PassBtn() //뽑기 False로 만들어줘서 다시 실행하는 함수
     {

@@ -1407,6 +1407,7 @@ MonoBehaviour:
     Skill_name: "\uCCB4\uB825\uC774 \uAC00\uC7A5\uC801\uC740\uC801 \uCC98\uCE58."
     Skill: {fileID: 4884240035919481195, guid: 545f30efcead58943828e2e43bb7ea0e, type: 3}
   Mob_List: []
+  boom: {fileID: 0}
 --- !u!4 &1721511126
 Transform:
   m_ObjectHideFlags: 0

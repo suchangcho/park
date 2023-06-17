@@ -18,14 +18,34 @@ public class LoadScene : MonoBehaviour
     }
     public void TenBtn()
     {
-        GameMgr.Instance.TenGachaCheck();
+        if (GameMgr.Instance.GachaMoney >= 1600)
+        {
+            GameMgr.Instance.TenGachaCheck();
+            LoadNextScene();
+        }
+        else
+        {
+            Debug.Log("10회 부족함");
+        }
     }
     public void SingleBtn()
     {
-        GameMgr.Instance.SingleGachaCheck();
+        if (GameMgr.Instance.GachaMoney >= 160)
+        {
+            GameMgr.Instance.SingleGachaCheck();
+            LoadNextScene();
+        }
+        else
+        {
+            Debug.Log("1회 부족함");
+        }
     }
     public void PassBtn00()
     {
         GameMgr.Instance.PassBtn();
+    }
+    public void chestBtn()
+    {
+        GameMgr.Instance.chestBtn();
     }
 }
