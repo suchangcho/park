@@ -11,6 +11,7 @@ TagManager:
   - Skill_one
   - Skill_two
   - Skill_Three
+  - Team
   layers:
   - Default
   - TransparentFX

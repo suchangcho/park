@@ -19,6 +19,9 @@ public class GameMgr
     public int PowerMoney = 0;  //업그레이드에 사용되는 재화
     public int GachaMoney = 0;  //뽑기에 사용되는 재화
 
+    //팀편성 관련 변수
+    public static int teamNum = 0; 
+
 
     public List<GachaCard> gachaList = new List<GachaCard>(); //뽑기 결과 담는 리스트
     public string gachaName;                                  //뽑은 애 이름

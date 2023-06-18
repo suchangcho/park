@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gacha/GachaBook.unity
     guid: 8d0d9153930d4d84ab2f75d14f22c5a8
+  - enabled: 1
+    path: Assets/Scenes/SuChangJo/Organ.unity
+    guid: fbf622f4edb67b642872b73564095b77
   m_configObjects: {}

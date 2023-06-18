@@ -56,9 +56,9 @@ public class GachaSystem : MonoBehaviour
     //카드 스폰하기
     private void SpawnCard(GachaCard card, Vector3 spawnPosition) //spawnPosition을 받아서 넣어줌
     {
-        GameObject cardObject = Instantiate(cardPrefab, spawnPosition, Quaternion.identity); //위치 가져오기
-        cardObject.transform.SetParent(UiCanvas,false);
-        GachaUI gachaUI = cardObject.GetComponent<GachaUI>();
+        GameObject gachaObject = Instantiate(cardPrefab, spawnPosition, Quaternion.identity); //위치 가져오기
+        gachaObject.transform.SetParent(UiCanvas,false);
+        GachaUI gachaUI = gachaObject.GetComponent<GachaUI>();
         if (gachaUI != null)
         {
             gachaUI.SetCardInfo(card);

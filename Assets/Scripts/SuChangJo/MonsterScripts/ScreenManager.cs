@@ -20,7 +20,7 @@ public class ScreenManager : MonoBehaviour
         }
     }
 
-    public void next()
+    public void next()//다음으로 넘기기
     {
         if(posisi < pos.Length - 1)
         {
@@ -29,7 +29,7 @@ public class ScreenManager : MonoBehaviour
         }
     }
 
-    public void prev()
+    public void prev()  //전으로 넘이기
     {
         if(posisi > 0)
         {
