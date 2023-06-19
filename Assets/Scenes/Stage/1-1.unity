@@ -441,7 +441,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe00e0abd7a124b429e24f4ee330c24b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 3495125782967135304, guid: 17b4a4dc1f1ed774fafe513672f4dbd0, type: 3}
+  Enemys:
+  - {fileID: 8084371591235823911, guid: 0fe8c57cca9712b40b566c8cc2031675, type: 3}
+  - {fileID: 5458330386261161883, guid: 61d12ca538a0847428cd35ade22f508c, type: 3}
   Spawns: {fileID: 280477665}
   spawn_cooltime: 5
   cooltime: 0
@@ -1850,6 +1852,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: 3
   cost_TXT: {fileID: 139005837}
+  Cost_Img:
+  - {fileID: 1770243265}
+  - {fileID: 1640868408}
+  - {fileID: 306034210}
   Team:
   - {fileID: 3630939614144520606, guid: 961ba496f82a46c4a858a551436243da, type: 3}
   Spawns: {fileID: 1993154748}

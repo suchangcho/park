@@ -16,12 +16,15 @@ public class Unit : MonoBehaviour
     [SerializeField] float Unit_Atk_cool;//적 공속 쿨다운
     public int Unit_Atk_Speed;//적의 공격속도 기준
 
+    public float Unit_Ypotion;//유닛이 스폰될 Y값,도착할 Y값
+    public float ray_scale;//감지용 레이의 크기
    public bool is_Attack;//공격 여부(공격을 해야하는 경우 제자리의 멈춰서 공격해야하기때문에)
    public bool is_stop;
 
    public bool is_Half;//맵의 반을 넘었는가를 판단하는 변수
     public GameObject Target;//레이캐스트에서 감지할 객체변수.
     Vector3 ray;//쏠 레이캐스트의 방향.
+
     Transform Half_Line;
     void Start()
     {
@@ -53,8 +56,8 @@ public class Unit : MonoBehaviour
         }
             if(this.gameObject.tag == "Enemy"){
                 ray = new Vector3(-0.5f, 0, 0);
-                Debug.DrawRay(myrigid.position, ray * -0.5f, new Color(0, 1, 0));
-                RaycastHit2D rayhit = Physics2D.Raycast(myrigid.position, ray, 0.5f,LayerMask.GetMask("Team"));
+                Debug.DrawRay(myrigid.position, ray * ray_scale, new Color(0, 1, 0));
+                RaycastHit2D rayhit = Physics2D.Raycast(myrigid.position, ray, ray_scale,LayerMask.GetMask("Team"));
                 if (rayhit.collider != null)
                 {
                     Target = rayhit.collider.gameObject;
@@ -67,8 +70,8 @@ public class Unit : MonoBehaviour
             }
             else if(this.gameObject.tag == "Team_Unit"){
                 ray = new Vector3(0.5f, 0, 0);
-                Debug.DrawRay(myrigid.position, ray * 0.5f, new Color(0, 1, 0));
-                RaycastHit2D rayhit = Physics2D.Raycast(myrigid.position, ray, 0.5f, LayerMask.GetMask("Enemy"));
+                Debug.DrawRay(myrigid.position, ray * ray_scale, new Color(0, 1, 0));
+                RaycastHit2D rayhit = Physics2D.Raycast(myrigid.position, ray, ray_scale, LayerMask.GetMask("Enemy"));
                 if (rayhit.collider != null)
                 {
                     if(rayhit.collider.gameObject.tag == "Enemy"){
@@ -86,11 +89,11 @@ public class Unit : MonoBehaviour
     {
         if (!is_Attack)
         {   if(this.gameObject.tag == "Team_Unit"){
-                this.transform.position = Vector2.MoveTowards(transform.position, new Vector2(team_target_tower.position.x, -3.7f), this.Speed * Time.deltaTime);//목표위치에 y값은 가져오면 공중으로 날아가기에 0으로 고정
+                this.transform.position = Vector2.MoveTowards(transform.position, new Vector2(team_target_tower.position.x, Unit_Ypotion), this.Speed * Time.deltaTime);//목표위치에 y값은 가져오면 공중으로 날아가기에 0으로 고정
                 //MoveTowards는(시작위치,목표위치,속도)이고 Tranlates는(방향,속도)
                 }
            else if(this.gameObject.tag == "Enemy"){
-                this.transform.position = Vector2.MoveTowards(transform.position, new Vector2(Mob_target_tower.position.x, -3.7f), this.Speed * Time.deltaTime);//목표위치에 y값은 가져오면 공중으로 날아가기에 0으로 고정
+                this.transform.position = Vector2.MoveTowards(transform.position, new Vector2(Mob_target_tower.position.x, Unit_Ypotion), this.Speed * Time.deltaTime);//목표위치에 y값은 가져오면 공중으로 날아가기에 0으로 고정
                 //MoveTowards는(시작위치,목표위치,속도)이고 Tranlates는(방향,속도)
                 }
         }

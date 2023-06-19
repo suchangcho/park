@@ -1,7 +1,97 @@
 fileFormatVersion: 2
 guid: f1e9f1b354985054ca8ffc043eea1a81
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8230305340654756342
+    second: raptor-bite_0
+  - first:
+      213: 9102872832501813761
+    second: raptor-bite_1
+  - first:
+      213: -4591694706029972375
+    second: raptor-bite_2
+  - first:
+      213: -2184810659389230424
+    second: raptor-bite_3
+  - first:
+      213: -604429299548965070
+    second: raptor-bite_4
+  - first:
+      213: 8547656244375027414
+    second: raptor-bite_5
+  - first:
+      213: 5784007848797697793
+    second: raptor-bite_6
+  - first:
+      213: 991009543902172007
+    second: raptor-bite_7
+  - first:
+      213: -1061960898680743503
+    second: raptor-bite_8
+  - first:
+      213: -8090264853454605170
+    second: raptor-bite_9
+  - first:
+      213: 4232407871280592986
+    second: raptor-bite_10
+  - first:
+      213: -401822205141513073
+    second: raptor-bite_11
+  - first:
+      213: 8221384173523613917
+    second: raptor-bite_12
+  - first:
+      213: 5228949906024267833
+    second: raptor-bite_13
+  - first:
+      213: -2568116731449917886
+    second: raptor-bite_14
+  - first:
+      213: -6370566483120294287
+    second: raptor-bite_15
+  - first:
+      213: -8735864271605956676
+    second: raptor-bite_16
+  - first:
+      213: -2160766144960795835
+    second: raptor-bite_17
+  - first:
+      213: -7579567990004426679
+    second: raptor-bite_18
+  - first:
+      213: -424214037827319892
+    second: raptor-bite_19
+  - first:
+      213: -9022151826540383603
+    second: raptor-bite_20
+  - first:
+      213: 4359403861101280889
+    second: raptor-bite_21
+  - first:
+      213: -7330301922249530034
+    second: raptor-bite_22
+  - first:
+      213: -8594078880990542266
+    second: raptor-bite_23
+  - first:
+      213: 2068196182967711648
+    second: raptor-bite_24
+  - first:
+      213: -7474191119300291023
+    second: raptor-bite_25
+  - first:
+      213: -7240318287708084735
+    second: raptor-bite_26
+  - first:
+      213: -6677314032415861938
+    second: raptor-bite_27
+  - first:
+      213: 1286593609379923100
+    second: raptor-bite_28
+  - first:
+      213: -2250320399030037911
+    second: raptor-bite_29
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -32,7 +122,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,12 +131,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -66,7 +156,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -78,7 +168,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -90,7 +180,532 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: raptor-bite_1
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 0
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10213d0bc96e35e70800000000000000
+      internalID: 9102872832501813761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_2
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 225
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964ba022ef50740c0800000000000000
+      internalID: -4591694706029972375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_4
+      rect:
+        serializedVersion: 2
+        x: 4004
+        y: 8
+        width: 275
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237bb8421c2ac97f0800000000000000
+      internalID: -604429299548965070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_5
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 125
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de7f1c11106f9670800000000000000
+      internalID: 8547656244375027414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_6
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 280
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10778a55e7ce44050800000000000000
+      internalID: 5784007848797697793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_12
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 95
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8b4e8d859381270800000000000000
+      internalID: 8221384173523613917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_13
+      rect:
+        serializedVersion: 2
+        x: 6250
+        y: 105
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93083e04c36f09840800000000000000
+      internalID: 5228949906024267833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_15
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 95
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176fa9b49833797a0800000000000000
+      internalID: -6370566483120294287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_18
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 95
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9485dd44217ffc690800000000000000
+      internalID: -7579567990004426679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_20
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 40
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d823b6517b0eac280800000000000000
+      internalID: -9022151826540383603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_21
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 25
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e786de6b6bf7c30800000000000000
+      internalID: 4359403861101280889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_22
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 25
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4524f34d39854a90800000000000000
+      internalID: -7330301922249530034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_23
+      rect:
+        serializedVersion: 2
+        x: 5580
+        y: 25
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6464fd68ac2bbb880800000000000000
+      internalID: -8594078880990542266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_24
+      rect:
+        serializedVersion: 2
+        x: 5595
+        y: 25
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7fb9b7875b3bc10800000000000000
+      internalID: 2068196182967711648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_25
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 20
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1361ab6e6c6564890800000000000000
+      internalID: -7474191119300291023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_26
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 15
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1062560d0e8358b90800000000000000
+      internalID: -7240318287708084735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_7
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 115
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7639f49fde5c0cd00800000000000000
+      internalID: 991009543902172007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_8
+      rect:
+        serializedVersion: 2
+        x: 5580
+        y: 115
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b997cc60382341f0800000000000000
+      internalID: -1061960898680743503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_9
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 300
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84b207dafa99bf80800000000000000
+      internalID: -8090264853454605170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_10
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 290
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a583f30e8888cba30800000000000000
+      internalID: 4232407871280592986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_11
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 105
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c0da755d07c6af0800000000000000
+      internalID: -401822205141513073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_14
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 80
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24eb03070773c5cd0800000000000000
+      internalID: -2568116731449917886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_27
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 15
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e431f14f34a6553a0800000000000000
+      internalID: -6677314032415861938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_28
+      rect:
+        serializedVersion: 2
+        x: 6230
+        y: 15
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94c0613216ead110800000000000000
+      internalID: 1286593609379923100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raptor-bite_29
+      rect:
+        serializedVersion: 2
+        x: 6260
+        y: 15
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962dff0158145c0e0800000000000000
+      internalID: -2250320399030037911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
