@@ -53,11 +53,11 @@ public class Skills : MonoBehaviour
             if(other.gameObject.tag =="Enemy"){
                     Debug.Log("º® Ãæµ¹");
                     if(other.gameObject.GetComponent<Unit>().is_Half == true){
-                        other.gameObject.transform.position = new Vector2(-2.3f,-3.7f);
+                        other.gameObject.transform.position = new Vector2(-2.3f,other.GetComponent<Unit>().Unit_Ypotion);
                          other.gameObject.GetComponent<Unit>().is_stop = false;
                     }
                     else{
-                        other.gameObject.transform.position = new Vector2(1.7f,-3.7f);
+                        other.gameObject.transform.position = new Vector2(1.7f,other.GetComponent<Unit>().Unit_Ypotion);
                         other.gameObject.GetComponent<Unit>().is_stop = true;//ºÎµ÷Èù °´Ã¼¸¸ ÀÌµ¿¸·±â.
                     }
                     
@@ -65,18 +65,19 @@ public class Skills : MonoBehaviour
             }
     }
     public void mob_list_add(List<GameObject> Mob_List){
-        for(int i =0; i <Mob_List.Count;i++)
-        {
-            Target_List_Origin.Add(Mob_List[i].GetComponent<Unit>().Unit_HP);
-        }
     }
     void Skill_Three(){
         if(this.gameObject.tag == "Skill_Three"){
             try
             {
+                    for(int i =0; i <skil.Mob_List.Count;i++)
+                    {
+                        Target_List_Origin.Add(skil.Mob_List[i].GetComponent<Unit>().Unit_HP);
+                    }
+
                 Target_List_Sort = Target_List_Sort.Distinct().ToList();
-                Target_List_Sort = Target_List_Origin.OrderByDescending(x => x).ToList();
-                
+                Target_List_Sort = Target_List_Origin.OrderBy(x => x).ToList();
+                 
                 for(int a =0; a<skil.Mob_List.Count;a++){
                     if(Target_List_Sort[0] == skil.Mob_List[a].GetComponent<Unit>().Unit_HP){
                         this.gameObject.transform.position=Vector2.MoveTowards(this.gameObject.transform.position,

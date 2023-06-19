@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawn_Enemy : MonoBehaviour
 {
-    public GameObject Enemy;//받을 적 캐릭터 프리펩
+    public GameObject[] Enemys;//받을 적 캐릭터 프리펩
     public GameObject Spawns;//스폰포인트를 담을 변수
 
     public float spawn_cooltime;//쿨타임 기준 설정
@@ -25,7 +25,8 @@ public class Spawn_Enemy : MonoBehaviour
     }
     void Spawn_Enemys()
     {
-            GameObject enemy = (GameObject)Instantiate(Enemy, new Vector2(Spawns.transform.position.x-1.5f,-3.7f), Quaternion.identity);
-            //몬스터를 타워 앞에서 소환하고 타워의 아래쪽에서 나오게 하기위해 상수값을 더해줌.
+        int mob_num = Random.Range(0,Enemys.Length);
+        GameObject enemy = (GameObject)Instantiate(Enemys[mob_num], new Vector2(Spawns.transform.position.x-1.5f,Enemys[mob_num].GetComponent<Unit>().Unit_Ypotion), Quaternion.identity);
+        //몬스터를 타워 앞에서 소환하고 타워의 아래쪽에서 나오게 하기위해 상수값을 더해줌.
     }
 }

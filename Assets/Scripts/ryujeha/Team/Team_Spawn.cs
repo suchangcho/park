@@ -6,6 +6,9 @@ public class Team_Spawn : MonoBehaviour
 {
     public int Cost;//스킬을 사용할 코스트;
     public Text cost_TXT;//코스트 텍스트.
+
+    public List<GameObject> Cost_Img = new List<GameObject>();
+
     public GameObject[] Team;//받을 적 캐릭터 프리펩
     public GameObject Spawns;//스폰포인트를 담을 변수
 
