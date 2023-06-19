@@ -15,8 +15,6 @@ public class TeamButton : MonoBehaviour
     }
     public void AddTeam()  //팀에 추가
     {
-
-
         TM.monsterTeamData.Add(this.gameObject);//리스트에 데이터 추가
         indexa = TM.monsterTeamData.FindIndex(a => a == this.gameObject);
         myImages = this.gameObject.GetComponent<Image>();

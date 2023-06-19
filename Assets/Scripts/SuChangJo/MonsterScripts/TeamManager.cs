@@ -8,7 +8,7 @@ public class TeamManager : MonoBehaviour
     public List<GameObject> monsterTeamData = new List<GameObject>();
     public Image myImages;
     public GameObject[] teamSlot;
-    /*public void AddTeam()  //ÆÀ¿¡ Ãß°¡
+    public void AddTeam()  //ÆÀ¿¡ Ãß°¡
     {
         
         
@@ -28,6 +28,6 @@ public class TeamManager : MonoBehaviour
             }
         }
 
-    }*/
+    }
 
 }
