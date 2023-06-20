@@ -442,8 +442,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemys:
-  - {fileID: 4825857007704691216, guid: 0465ad8d1a4faa64f93afdfe2a305ee3, type: 3}
-  - {fileID: 865471498842041291, guid: e0c0e72f06f37b649a352a3c00dc361f, type: 3}
+  - {fileID: 4851674460377376865, guid: cf589d85f69c204458f802f44a4ffb5b, type: 3}
+  - {fileID: 529263982430505577, guid: a266cef8b3625c1448793985f02ab17a, type: 3}
   Spawns: {fileID: 280477665}
   spawn_cooltime: 5
   cooltime: 0
