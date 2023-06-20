@@ -366,7 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b391bf4aeed2fd4f8c28046c3e8e5c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookName: "\uACE0\uD074\uB9B0 \uC655"
+  bookName: "\uACE0\uD074\uB9B0\uC655"
 --- !u!1 &163571832
 GameObject:
   m_ObjectHideFlags: 0
@@ -3163,6 +3163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c691fe3b8ce774488f0a6ec6299465f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wordList: []
 --- !u!4 &2005868858
 Transform:
   m_ObjectHideFlags: 0
