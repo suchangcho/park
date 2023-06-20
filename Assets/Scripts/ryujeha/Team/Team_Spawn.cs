@@ -9,7 +9,7 @@ public class Team_Spawn : MonoBehaviour
 
     public List<GameObject> Cost_Img = new List<GameObject>();
 
-    public GameObject[] Team;//받을 적 캐릭터 프리펩
+    public GameObject[] Team;//받을  캐릭터 프리펩
     public GameObject Spawns;//스폰포인트를 담을 변수
 
     public float spawn_cooltime;//쿨타임 기준 설정
@@ -38,7 +38,7 @@ public class Team_Spawn : MonoBehaviour
     {
         if (is_Spawn)
         {
-            GameObject team = (GameObject)Instantiate(Team[0], new Vector2(Spawns.transform.position.x + 1.5f, -3.7f), Quaternion.identity);//임시로 0번을 소환
+            GameObject team = (GameObject)Instantiate(Team[0], new Vector2(Spawns.transform.position.x + 1.5f,Team[0].GetComponent<Unit>().Unit_Ypotion), Quaternion.identity);//임시로 0번을 소환
             cooltime = spawn_cooltime;//쿨 기준 초기화
             is_Spawn = false;
         }

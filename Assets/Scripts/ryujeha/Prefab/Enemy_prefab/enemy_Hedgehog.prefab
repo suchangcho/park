@@ -99,19 +99,19 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.026386872, y: 0.012526825}
+  m_Offset: {x: -0.026386872, y: 1.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.4857143, y: 0.2857143}
+    oldSize: {x: 0.56666666, y: 0.33333334}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.73277366, y: 0.46494654}
-  m_EdgeRadius: 0.3
+  m_Size: {x: 0.73277366, y: 3}
+  m_EdgeRadius: 0
 --- !u!50 &5165899121113273719
 Rigidbody2D:
   serializedVersion: 4
@@ -170,7 +170,7 @@ MonoBehaviour:
   team_target_tower: {fileID: 0}
   Mob_target_tower: {fileID: 0}
   myrigid: {fileID: 5165899121113273719}
-  Unit_HP: 200
+  Unit_HP: 300
   Speed: 1
   Unit_Atk: 50
   Unit_Atk_cool: 0
