@@ -28,6 +28,7 @@ public class MonsterHUD : MonoBehaviour
         hpText.text = "HP :" + monsterUnit.MaxHP;//체력
         attackText.text = "Attack :" + monsterUnit.Attack;//공격
         powerMoney.text = "강화비용 :" + GameMgr.Instance.PowerMoney;//강화비용 
+       
     }
 
 }
