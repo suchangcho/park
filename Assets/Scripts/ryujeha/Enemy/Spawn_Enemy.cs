@@ -5,7 +5,10 @@ using UnityEngine;
 public class Spawn_Enemy : MonoBehaviour
 {
     public GameObject[] Enemys;//받을 적 캐릭터 프리펩
+    public GameObject Boss_Enemy;
     public GameObject Spawns;//스폰포인트를 담을 변수
+
+    public bool boss_Spawning;
 
     public float spawn_cooltime;//쿨타임 기준 설정
     public float cooltime;//실제 쿨타임 연산
@@ -28,5 +31,9 @@ public class Spawn_Enemy : MonoBehaviour
         int mob_num = Random.Range(0,Enemys.Length);
         GameObject enemy = (GameObject)Instantiate(Enemys[mob_num], new Vector2(Spawns.transform.position.x-1.5f,Enemys[mob_num].GetComponent<Unit>().Unit_Ypotion), Quaternion.identity);
         //몬스터를 타워 앞에서 소환하고 타워의 아래쪽에서 나오게 하기위해 상수값을 더해줌.
+    }
+   public void Boss_Spawn(){
+      GameObject Boss = (GameObject)Instantiate(Boss_Enemy, new Vector2(Spawns.transform.position.x-1.5f,Boss_Enemy.GetComponent<Unit>().Unit_Ypotion), Quaternion.identity);
+      boss_Spawning = true;
     }
 }
