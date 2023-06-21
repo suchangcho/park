@@ -797,12 +797,12 @@ RectTransform:
   - {fileID: 1498783462}
   - {fileID: 183260134}
   - {fileID: 1269565638}
-  m_Father: {fileID: 257242888}
-  m_RootOrder: 4
+  m_Father: {fileID: 2015453666}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2155.9492, y: -394.1316}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1437.3, y: 788.2632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &118202962
@@ -1133,7 +1133,7 @@ RectTransform:
   - {fileID: 748525290}
   - {fileID: 2098892253}
   m_Father: {fileID: 2015453666}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1578,7 +1578,7 @@ RectTransform:
   - {fileID: 1921331062}
   - {fileID: 812943682}
   m_Father: {fileID: 2015453666}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1765,7 +1765,6 @@ RectTransform:
   - {fileID: 1485049144}
   - {fileID: 923392120}
   - {fileID: 1257732756}
-  - {fileID: 118202961}
   m_Father: {fileID: 2015453666}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2334,7 +2333,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 943700358}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.09938863
+  m_Size: 0.0903533
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5145,7 +5144,7 @@ RectTransform:
   - {fileID: 1226517161}
   - {fileID: 2134945373}
   m_Father: {fileID: 2015453666}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9698,7 +9697,7 @@ RectTransform:
   - {fileID: 1768937296}
   - {fileID: 61693225}
   m_Father: {fileID: 2015453666}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10232,6 +10231,7 @@ RectTransform:
   - {fileID: 543117309}
   - {fileID: 110369398}
   - {fileID: 257242888}
+  - {fileID: 118202961}
   - {fileID: 150732654}
   - {fileID: 1884161193}
   - {fileID: 203940067}
