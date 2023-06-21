@@ -9,6 +9,9 @@ public class MonsterHUD : MonoBehaviour
     [SerializeField] Text nameText;
     public Text levelText;
     public MonsterUnit monsterUnit;
+    public Text hpText;
+    public Text attackText;
+    public Text powerMoney;
     //public Text PowerUpMoneyText;
 
     public void Update()
@@ -21,7 +24,10 @@ public class MonsterHUD : MonoBehaviour
     public void SetData(MonsterUnit monsterUnit)
     {
         nameText.text = monsterUnit._base.name; //모니터
-        levelText.text = "Lvl " + monsterUnit.level;
+        levelText.text = "Lvl " + monsterUnit.level;//레벨
+        hpText.text = "HP :" + monsterUnit.MaxHP;//체력
+        attackText.text = "Attack :" + monsterUnit.Attack;//공격
+        powerMoney.text = "강화비용 :" + GameMgr.Instance.PowerMoney * (GameMgr.Instance.PowerMoney/10);//강화비용 
     }
 
 }
