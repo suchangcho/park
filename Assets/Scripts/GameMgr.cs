@@ -71,7 +71,7 @@ public class GameMgr
 }
 public void chestBtn()
     {
-        GachaMoney += 999;
+        GachaMoney += 9999999;
     }
     public void PassBtn() //뽑기 False로 만들어줘서 다시 실행하는 함수
     {

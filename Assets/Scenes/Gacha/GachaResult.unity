@@ -776,27 +776,27 @@ MonoBehaviour:
     cardName: "\uC544\uC6B0\uB85C\uB77C"
     cardImage: {fileID: 21300000, guid: 27362f1f5439d974da22ca237036f59f, type: 3}
   - grade: A
-    weight: 5
+    weight: 4
     cardName: "\uB4DC\uB984\uC774"
     cardImage: {fileID: 21300000, guid: fe2f1c5a941209346a8d6d766417857e, type: 3}
   - grade: A
-    weight: 7
+    weight: 4
     cardName: "\uB0E5\uBBF8\uB204"
     cardImage: {fileID: 21300000, guid: 3f9e335a3829e0842a086ba16c23a8af, type: 3}
   - grade: A
-    weight: 7
+    weight: 4
     cardName: "\uC874\uC591\uC774"
     cardImage: {fileID: 21300000, guid: 2998fbf3268927f4688996016baa5790, type: 3}
   - grade: A
-    weight: 10
+    weight: 4
     cardName: "\uB0A0\uAC78\uC774"
     cardImage: {fileID: 21300000, guid: 31ed658008d717644add0af85e2faa10, type: 3}
   - grade: B
-    weight: 10
+    weight: 9
     cardName: "\uB85C\uBCF4\uAC74\uB2E4\uC784"
     cardImage: {fileID: 21300000, guid: 02fec982fb793f745b17992533d0bf1d, type: 3}
   - grade: B
-    weight: 15
+    weight: 9
     cardName: "\uD15F\uCE74\uC789"
     cardImage: {fileID: 21300000, guid: 815b64e6774009545bb91c8d33a64e59, type: 3}
   - grade: C
@@ -808,15 +808,15 @@ MonoBehaviour:
     cardName: "\uACE0\uD074\uB9B0\uC655"
     cardImage: {fileID: 21300000, guid: c818220c12bf53549a8e20fcf89c09ba, type: 3}
   - grade: F
-    weight: 15
+    weight: 20
     cardName: "\uBCA0\uC774\uC5BC"
     cardImage: {fileID: 21300000, guid: cfc835c43082403488f97630972d4417, type: 3}
   - grade: F
-    weight: 15
+    weight: 20
     cardName: "\uBBF8\uB178\uD32C\uD2F0"
     cardImage: {fileID: 21300000, guid: dc993814a540b3d4f81e7317054f109d, type: 3}
   - grade: F
-    weight: 15
+    weight: 20
     cardName: "\uCE74\uC54C\uD53C\uBC14\uB77C"
     cardImage: {fileID: 21300000, guid: 0d184d950170e4449846eaa6b33d61f9, type: 3}
   singlePullCardSpawnPoint: {fileID: 343036634}
