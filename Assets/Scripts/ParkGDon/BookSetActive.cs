@@ -7,6 +7,5 @@ using UnityEngine.UI;
 [Serializable]
 public class BookSetActive : MonoBehaviour
 {
-
     public string bookName;
 }
