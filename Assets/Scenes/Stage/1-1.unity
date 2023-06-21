@@ -442,9 +442,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemys:
-  - {fileID: 4851674460377376865, guid: cf589d85f69c204458f802f44a4ffb5b, type: 3}
+  - {fileID: 3495125782967135304, guid: 17b4a4dc1f1ed774fafe513672f4dbd0, type: 3}
   - {fileID: 529263982430505577, guid: a266cef8b3625c1448793985f02ab17a, type: 3}
+  Boss_Enemy: {fileID: 926839807764160030, guid: d05eef2beeb7ab24a97a0a9d1de7fdc0, type: 3}
   Spawns: {fileID: 280477665}
+  boss_Spawning: 0
   spawn_cooltime: 5
   cooltime: 0
 --- !u!114 &280477670
@@ -461,7 +463,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tower_MaxHp: 9999
   Tower_Current_Hp: 0
-  hp: 0
   Hp_Txt: {fileID: 663807369}
 --- !u!1 &306034210
 GameObject:
@@ -1836,7 +1837,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tower_MaxHp: 9999
   Tower_Current_Hp: 0
-  hp: 0
   Hp_Txt: {fileID: 1802248269}
 --- !u!114 &1993154753
 MonoBehaviour:

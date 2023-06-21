@@ -74,10 +74,10 @@ public class Unit : MonoBehaviour
                 RaycastHit2D rayhit = Physics2D.Raycast(myrigid.position, ray, ray_scale, LayerMask.GetMask("Enemy"));
                 if (rayhit.collider != null)
                 {
-                    if(rayhit.collider.gameObject.tag == "Enemy"){
-                        Target = rayhit.collider.gameObject;
-                        Attack(Target);
-                    }
+                  
+                    Target = rayhit.collider.gameObject;
+                    Attack(Target);
+                    
                 }
                 else
                 {
@@ -122,7 +122,7 @@ public class Unit : MonoBehaviour
         else if(this.gameObject.tag == "Team_Unit"){
              if (Unit_Atk_cool <= 0)//만약 쿨타임이 델타타임에서부터 깎여 0초가 되었다면
             {
-                if (Enemy.gameObject.tag == "Enemy_Tower")
+                if(Enemy.gameObject.tag == "Enemy_Tower")
                 {
                     Unit_anim.SetTrigger("Attack");//애니매이션 호출.
                     Enemy.GetComponent<Tower>().Tower_Current_Hp -= Unit_Atk;//부딧힌 타워에서 타워 스크립트에 접근해 HP를 공격력만큼 깍아줌.
