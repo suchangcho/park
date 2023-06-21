@@ -12,9 +12,9 @@ public class Skill : MonoBehaviour
    [SerializeField] public List<GameObject> Mob_List= new List<GameObject>();//적들을 담을 정렬 후 리스트
      Vector2 ray_start =new Vector2(-8.7f,-3.7f);
     Vector3 ray;//쏠 레이캐스트의 방향.
-    Team_Spawn team;
+    Team_Tower team;
     void Start() {
-        team = FindObjectOfType<Team_Spawn>();
+        team = FindObjectOfType<Team_Tower>();
         GameMgr.Input.key_action -= SkillS;
         GameMgr.Input.key_action += SkillS;
     }

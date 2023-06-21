@@ -170,9 +170,9 @@ MonoBehaviour:
   team_target_tower: {fileID: 0}
   Mob_target_tower: {fileID: 0}
   myrigid: {fileID: 4277657845334417998}
-  Unit_HP: 1000
+  Unit_HP: 6000
   Speed: 1
-  Unit_Atk: 200
+  Unit_Atk: 500
   Unit_Atk_cool: 0
   Unit_Atk_Speed: 1
   Unit_Ypotion: -0.8

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Unit : MonoBehaviour
 {
     public Animator Unit_anim;//에너미의 에니메이터 각각 다르게 넣어줘야함.
-    
+    public MonsterBase Base;
    public Transform team_target_tower;//어디까지 이동할 지에 대한 목표위치받기.
    public Transform Mob_target_tower;
     public Rigidbody2D myrigid;// 객체의 리지드바디.
@@ -28,6 +28,12 @@ public class Unit : MonoBehaviour
     Transform Half_Line;
     void Start()
     {
+        if(this.gameObject.tag == "Team_Unit"){
+            Unit_HP = Base.MaxHp;
+            Unit_Atk = Base.Attack;
+            Unit_Atk_Speed = Base.AttackSpeed;
+            Speed = Base.Speed;
+        }
         team_target_tower = GameObject.FindWithTag("Enemy_Tower").transform;//적군은 팀타워까지 이동해야하므로 팀타워객체를 찾아서 타겟으로 지정.
         Mob_target_tower = GameObject.FindWithTag("Team_tower").transform;//적군은 팀타워까지 이동해야하므로 팀타워객체를 찾아서 타겟으로 지정.
     }
