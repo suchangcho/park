@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "\uB2E4\uC774\uB178\uC18C\uC6B8"
   description: 
-  monster: {fileID: 0}
+  monster: {fileID: 21300000, guid: 0c9335b7ba1026245919422aaa5aae5e, type: 3}
   maxHp: 180
   attack: 30
   attackSpeed: 15

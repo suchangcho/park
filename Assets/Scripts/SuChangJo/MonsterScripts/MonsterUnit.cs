@@ -14,7 +14,7 @@ public class MonsterUnit : MonoBehaviour
         Debug.Log(level);
         Debug.Log(Attack);
         Debug.Log(MaxHP);
-        //GameMgr.Instance.PowerMoney = GameMgr.Instance.PowerMoney * 1.1;
+        //sGameMgr.Instance.PowerMoney = GameMgr.Instance.PowerMoney * 1.1;
     }
     
 
