@@ -16,8 +16,12 @@ public class GameMgr
 
     //재화
     public int BattleMoney = 0; //전투내에서 사용되는 재화
-    public int PowerMoney = 0;  //업그레이드에 사용되는 재화
+    public int PowerMoney = 100;  //업그레이드에 사용되는 재화
     public int GachaMoney = 0;  //뽑기에 사용되는 재화
+
+    public Text battleMoney;
+    public Text powerMoney;
+    public Text gachaMoney;
 
     //팀편성 관련 변수
     public static int teamNum = 0; 
@@ -29,7 +33,7 @@ public class GameMgr
     Input_Manager _input = new Input_Manager();
     public static Input_Manager Input { get { return Instance._input; } }
 
-
+    
 
     //게임 매니저 인스턴스에 접근할 수 있는 프로퍼티. static이므로 다른 클래스에서 맘껏 호출할 수 있다.
     public static GameMgr Instance
