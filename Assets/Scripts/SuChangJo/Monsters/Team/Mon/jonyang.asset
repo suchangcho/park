@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5c6a36b4166f184aa4e89ba82ff3b68, type: 3}
   m_Name: jonyang
   m_EditorClassIdentifier: 
-  name: 
+  name: "\uC874\uC591"
   description: 
   monster: {fileID: 0}
   maxHp: 100
   attack: 100
+  cost: 400
   attackSpeed: 1
   speed: 3

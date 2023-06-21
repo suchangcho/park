@@ -1448,4 +1448,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c7ec430ba6c7af40b5e905aa9b6641b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Organ
+  nextScene: PowerUp

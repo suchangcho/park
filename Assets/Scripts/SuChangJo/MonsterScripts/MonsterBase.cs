@@ -15,6 +15,7 @@ public class MonsterBase : ScriptableObject
 
     public int maxHp;//최대 체력
     public int attack;//공격력
+    public int cost;
     public int attackSpeed; //공격속도
     public int speed; //스피드
 
@@ -42,6 +43,10 @@ public class MonsterBase : ScriptableObject
     public int Speed
     {
         get { return speed; }
+    }
+    public int Cost
+    {
+        get { return cost; }
     }
 
 }
