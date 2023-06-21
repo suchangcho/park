@@ -103,7 +103,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6666667, y: 1.1333333}
+    oldSize: {x: 0.5714286, y: 0.9714286}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Unit_anim: {fileID: 3149002565066636367}
+  Base: {fileID: 0}
   team_target_tower: {fileID: 0}
   Mob_target_tower: {fileID: 0}
   myrigid: {fileID: 8418666926092031025}
@@ -175,7 +176,7 @@ MonoBehaviour:
   Unit_Atk: 50
   Unit_Atk_cool: 0
   Unit_Atk_Speed: 1
-  Unit_Ypotion: -4.3
+  Unit_Ypotion: -4.1
   ray_scale: 1
   is_Attack: 0
   is_stop: 0

@@ -17,5 +17,5 @@ MonoBehaviour:
   monster: {fileID: 0}
   maxHp: 300
   attack: 10
-  attackSpeed: 5
-  speed: 5
+  attackSpeed: 1
+  speed: 2

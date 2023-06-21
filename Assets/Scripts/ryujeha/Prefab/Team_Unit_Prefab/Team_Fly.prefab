@@ -177,7 +177,7 @@ MonoBehaviour:
   Unit_Atk_cool: 0
   Unit_Atk_Speed: 1
   Unit_Ypotion: -3.9
-  ray_scale: 0.5
+  ray_scale: 1
   is_Attack: 0
   is_stop: 0
   is_Half: 0

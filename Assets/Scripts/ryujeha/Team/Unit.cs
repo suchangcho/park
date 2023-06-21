@@ -80,7 +80,6 @@ public class Unit : MonoBehaviour
                 RaycastHit2D rayhit = Physics2D.Raycast(myrigid.position, ray, ray_scale, LayerMask.GetMask("Enemy"));
                 if (rayhit.collider != null)
                 {
-                  
                     Target = rayhit.collider.gameObject;
                     Attack(Target);
                     
