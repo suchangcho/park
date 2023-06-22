@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b36cdfe9bbc0b124abd81da9a3873887
+=======
+guid: 432081ef49f814b4f848be0e8cd95068
+>>>>>>> 8cc65253054fbdf4b84623b50e66629ae0f3422d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -32,7 +36,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
+=======
+    filterMode: 1
+>>>>>>> 8cc65253054fbdf4b84623b50e66629ae0f3422d
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +54,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 48
+=======
+  spritePixelsToUnits: 100
+>>>>>>> 8cc65253054fbdf4b84623b50e66629ae0f3422d
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
