@@ -15,6 +15,7 @@ public class Tower : MonoBehaviour
     
     private void Start()
     {
+        Time.timeScale = 1f;
         Tower_Current_Hp = Tower_MaxHp;
     }
     void Update()
@@ -31,6 +32,8 @@ public class Tower : MonoBehaviour
             if(Tower_Current_Hp <= 0){//게임 클리어했을경우
                 Time.timeScale = 0f;
                 Clear_Screen.gameObject.SetActive(true);
+                GameMgr.Instance.GachaMoney += 10000;
+                GameMgr.Instance.PowerMoney += 10000;
             }  
         }
         else if(this.gameObject.tag =="Team_tower"){
@@ -41,14 +44,14 @@ public class Tower : MonoBehaviour
         }
     }
 
-    public void Next_Stage(){
-
+    public void Next_Stage(int NEXT_SCENE_num){
+        SceneManager.LoadScene(NEXT_SCENE_num);
     }
-    public void Re_Start(){
-        
+    public void Re_Start(int current_Scene_NUm){
+        SceneManager.LoadScene(current_Scene_NUm);
     }
 
     public void Quit_Stage(){
-
+        SceneManager.LoadScene("Main screen");
     }
 }
