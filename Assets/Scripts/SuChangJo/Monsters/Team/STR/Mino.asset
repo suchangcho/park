@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5c6a36b4166f184aa4e89ba82ff3b68, type: 3}
   m_Name: Mino
   m_EditorClassIdentifier: 
-  name: "\uBBF8\uB178\uD32C"
+  name: "\uBBF8\uB178\uD32C\uD2F0"
   description: 
   monster: {fileID: 0}
   maxHp: 150

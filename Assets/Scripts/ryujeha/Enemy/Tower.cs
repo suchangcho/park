@@ -30,7 +30,7 @@ public class Tower : MonoBehaviour
                 this.GetComponent<Spawn_Enemy>().Boss_Spawn();
             }
             if(Tower_Current_Hp <= 0){//게임 클리어했을경우
-                Time.timeScale = 0f;
+                Time.timeScale = 0.000001f;
                 Clear_Screen.gameObject.SetActive(true);
                 GameMgr.Instance.GachaMoney += 10000;
                 GameMgr.Instance.PowerMoney += 10000;
@@ -38,7 +38,7 @@ public class Tower : MonoBehaviour
         }
         else if(this.gameObject.tag =="Team_tower"){
             if(Tower_Current_Hp <= 0){//게임 오버했을경우
-                Time.timeScale = 0f;
+                Time.timeScale = 0.000001f;
                 Gameover_Screen.gameObject.SetActive(true);
             }  
         }

@@ -659,7 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b391bf4aeed2fd4f8c28046c3e8e5c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookName: "\uC874\uC591"
+  bookName: "\uC874\uC591\uC774"
 --- !u!114 &61693227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4976,7 +4976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b391bf4aeed2fd4f8c28046c3e8e5c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookName: "\uB4DC\uB7A8"
+  bookName: "\uB4DC\uB984\uC774"
 --- !u!114 &812943684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7240,7 +7240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b391bf4aeed2fd4f8c28046c3e8e5c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookName: "\uBBF8\uB178\uD32C"
+  bookName: "\uBBF8\uB178\uD32C\uD2F0"
 --- !u!114 &1257732758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7725,7 +7725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b391bf4aeed2fd4f8c28046c3e8e5c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookName: "\uACE0\uD074\uB9B0"
+  bookName: "\uACE0\uD074\uB9B0\uC655"
 --- !u!114 &1404037956
 MonoBehaviour:
   m_ObjectHideFlags: 0
