@@ -29,13 +29,13 @@ public class Tower : MonoBehaviour
                 this.GetComponent<Spawn_Enemy>().Boss_Spawn();
             }
             if(Tower_Current_Hp <= 0){//게임 클리어했을경우
-                Time.timeScale = 0.001f;
+                Time.timeScale = 0f;
                 Clear_Screen.gameObject.SetActive(true);
             }  
         }
         else if(this.gameObject.tag =="Team_tower"){
             if(Tower_Current_Hp <= 0){//게임 오버했을경우
-                Time.timeScale = 0.001f;
+                Time.timeScale = 0f;
                 Gameover_Screen.gameObject.SetActive(true);
             }  
         }

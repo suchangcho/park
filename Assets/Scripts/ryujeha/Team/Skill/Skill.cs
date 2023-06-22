@@ -23,26 +23,26 @@ public class Skill : MonoBehaviour
 
     public void SkillS()
     {
-        if(Input.GetKeyDown(KeyCode.Q)&& team.Cost >= 3)//1번 스킬이라면
+        if(Input.GetKeyDown(KeyCode.Q)&& team.Skill_Cost >= 3)//1번 스킬이라면
         {
             For_Moon(1);
-            team.Cost = team.Cost -3;
+            team.Skill_Cost = team.Skill_Cost -3;
             for(int i =0; i<team.Cost_Img.Count;i++){
                Destroy(team.Cost_Img[i].gameObject);
             }
             team.Cost_Img.Clear();
         }
-        else if(Input.GetKeyDown(KeyCode.W)&& team.Cost >= 2)//2번 스킬이라면
+        else if(Input.GetKeyDown(KeyCode.W)&& team.Skill_Cost >= 2)//2번 스킬이라면
         {
             For_Moon(2);
-            team.Cost = team.Cost -2;
+            team.Skill_Cost = team.Skill_Cost -2;
             for(int i =0; i<2;i++){
                Destroy(team.Cost_Img[i].gameObject);
             }
             team.Cost_Img.RemoveRange(0,2);
 
         }
-        else if(Input.GetKeyDown(KeyCode.E)&& team.Cost >= 1)//3번 스킬이라면
+        else if(Input.GetKeyDown(KeyCode.E)&& team.Skill_Cost >= 1)//3번 스킬이라면
         {
             for(int i = 0; i< skill_Managers.Length; i++){
                 if(skill_Managers[i].Skill_num == 3 ){
@@ -51,7 +51,7 @@ public class Skill : MonoBehaviour
                     Ray();
                 }
             }
-            team.Cost = team.Cost -1;
+            team.Skill_Cost = team.Skill_Cost -1;
             Destroy(team.Cost_Img[0]);
             team.Cost_Img.RemoveAt(0);
         }

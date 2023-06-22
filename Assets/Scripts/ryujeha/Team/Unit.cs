@@ -15,7 +15,6 @@ public class Unit : MonoBehaviour
     public int Unit_Atk;//적의 공격력
     [SerializeField] float Unit_Atk_cool;//적 공속 쿨다운
     public int Unit_Atk_Speed;//적의 공격속도 기준
-
     public float Unit_Ypotion;//유닛이 스폰될 Y값,도착할 Y값
     public float ray_scale;//감지용 레이의 크기
    public bool is_Attack;//공격 여부(공격을 해야하는 경우 제자리의 멈춰서 공격해야하기때문에)
