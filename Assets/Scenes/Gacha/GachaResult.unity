@@ -850,7 +850,7 @@ MonoBehaviour:
   - grade: SS
     weight: 1
     cardName: "\uC544\uC6B0\uB85C\uB77C"
-    cardImage: {fileID: 21300000, guid: 27362f1f5439d974da22ca237036f59f, type: 3}
+    cardImage: {fileID: 21300000, guid: 81f16733d501c0a448bfa943cd75492c, type: 3}
   - grade: A
     weight: 4
     cardName: "\uB4DC\uB984\uC774"
