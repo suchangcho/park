@@ -598,7 +598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Clear_Screen: {fileID: 1102454386}
   Gameover_Screen: {fileID: 175693300}
-  Tower_MaxHp: 3500
+  Tower_MaxHp: 15000
   Tower_Current_Hp: 0
   Hp_Txt: {fileID: 663807369}
 --- !u!1 &306034210
@@ -2542,7 +2542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cost: 0
-  Cost_price: 30
+  Cost_price: 50
   cost_TXT: {fileID: 1041485507}
   Skill_Cost: 3
   Skill_cost_TXT: {fileID: 139005837}

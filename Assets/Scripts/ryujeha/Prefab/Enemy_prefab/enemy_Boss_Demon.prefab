@@ -173,7 +173,7 @@ MonoBehaviour:
   myrigid: {fileID: 4277657845334417998}
   Unit_HP: 5000
   Speed: 2
-  Unit_Atk: 200
+  Unit_Atk: 150
   Unit_Atk_cool: 0
   Unit_Atk_Speed: 1
   Unit_Ypotion: -0.8
