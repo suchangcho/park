@@ -32,7 +32,7 @@ public class MonsterUnit : MonoBehaviour
     }
     public int MaxHP
     {
-        get { return _base.MaxHp + (level * 200); }
+        get { return _base.MaxHp + (level * 20); }
     }
 
 }

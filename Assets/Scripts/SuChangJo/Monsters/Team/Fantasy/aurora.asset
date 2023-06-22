@@ -17,5 +17,6 @@ MonoBehaviour:
   monster: {fileID: 0}
   maxHp: 500
   attack: 40
+  cost: 900
   attackSpeed: 15
   speed: 20
