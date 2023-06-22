@@ -10,7 +10,7 @@ public class MonsterUnit : MonoBehaviour
     
     public void PowerUp()
     {
-        level += 1;
+        level += 1; //·¹º§¾÷
         Debug.Log(level);
         Debug.Log(Attack);
         Debug.Log(MaxHP);
