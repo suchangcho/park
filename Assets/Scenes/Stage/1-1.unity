@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 139005838}
   - component: {fileID: 139005837}
   m_Layer: 0
-  m_Name: Cost_TxT
+  m_Name: Skill_Cost_TxT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,12 +577,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemys:
-  - {fileID: 4851674460377376865, guid: cf589d85f69c204458f802f44a4ffb5b, type: 3}
-  - {fileID: 4851674460377376865, guid: cf589d85f69c204458f802f44a4ffb5b, type: 3}
-  Boss_Enemy: {fileID: 926839807764160030, guid: d05eef2beeb7ab24a97a0a9d1de7fdc0, type: 3}
+  - {fileID: 3783116984865552078, guid: b60d6ee445d1d1d449252008566ef0a2, type: 3}
+  - {fileID: 3248309084275441204, guid: c35e683ee0b3cc7489d27e48f3bd5eca, type: 3}
+  Boss_Enemy: {fileID: 4825857007704691216, guid: 0465ad8d1a4faa64f93afdfe2a305ee3, type: 3}
   Spawns: {fileID: 280477665}
   boss_Spawning: 0
-  spawn_cooltime: 5
+  spawn_cooltime: 4
   cooltime: 0
 --- !u!114 &280477670
 MonoBehaviour:
@@ -598,7 +598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Clear_Screen: {fileID: 1102454386}
   Gameover_Screen: {fileID: 175693300}
-  Tower_MaxHp: 3500
+  Tower_MaxHp: 15000
   Tower_Current_Hp: 0
   Hp_Txt: {fileID: 663807369}
 --- !u!1 &306034210
@@ -1516,6 +1516,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1041485506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1041485509}
+  - component: {fileID: 1041485508}
+  - component: {fileID: 1041485507}
+  m_Layer: 0
+  m_Name: Cost_TxT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1041485507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041485506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0.913435, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\uC6D0"
+--- !u!222 &1041485508
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041485506}
+  m_CullTransparentMesh: 1
+--- !u!224 &1041485509
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041485506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1656595041}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 836.6168, y: 500}
+  m_SizeDelta: {x: 222.62, y: 56.4299}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1055756997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,6 +1931,7 @@ Transform:
   - {fileID: 1802248268}
   - {fileID: 663807368}
   - {fileID: 139005836}
+  - {fileID: 1041485509}
   m_Father: {fileID: 789417798}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2461,8 +2541,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c5f8ea107598141b381f51484a25bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cost: 3
-  cost_TXT: {fileID: 139005837}
+  Cost: 0
+  Cost_price: 50
+  cost_TXT: {fileID: 1041485507}
+  Skill_Cost: 3
+  Skill_cost_TXT: {fileID: 139005837}
+  cooltime: 0
   Cost_Img:
   - {fileID: 1770243265}
   - {fileID: 1640868408}

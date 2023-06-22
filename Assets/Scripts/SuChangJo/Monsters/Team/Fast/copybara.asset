@@ -15,8 +15,8 @@ MonoBehaviour:
   name: "\uCE74\uC54C\uD53C\uBC14\uB77C"
   description: 
   monster: {fileID: 21300000, guid: 0d184d950170e4449846eaa6b33d61f9, type: 3}
-  maxHp: 100
-  attack: 30
-  cost: 50
+  maxHp: 120
+  attack: 35
+  cost: 20
   attackSpeed: 1
-  speed: 2
+  speed: 3

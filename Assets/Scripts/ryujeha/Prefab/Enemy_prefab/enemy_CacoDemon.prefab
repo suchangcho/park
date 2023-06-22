@@ -167,12 +167,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Unit_anim: {fileID: 5040463631450286618}
+  Base: {fileID: 0}
   team_target_tower: {fileID: 0}
   Mob_target_tower: {fileID: 0}
   myrigid: {fileID: 1915664981119074916}
-  Unit_HP: 200
+  Unit_HP: 500
   Speed: 1
-  Unit_Atk: 50
+  Unit_Atk: 20
   Unit_Atk_cool: 0
   Unit_Atk_Speed: 1
   Unit_Ypotion: -4

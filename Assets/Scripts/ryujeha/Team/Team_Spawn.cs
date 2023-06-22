@@ -11,6 +11,11 @@ public class Team_Spawn : MonoBehaviour
     public float cooltime;//실제 쿨타임 연산
 
     bool is_Spawn = false;//무한소환이 되면 안되므로, 소환을 할때 약간의 쿨타임을 주기위한 변수
+    Team_Tower Team_Tower;
+
+    private void Start() {
+        Team_Tower = FindObjectOfType<Team_Tower>();
+    }
 
     void Update()
     {
@@ -29,9 +34,13 @@ public class Team_Spawn : MonoBehaviour
     {
         if (is_Spawn)
         {
-            GameObject team = (GameObject)Instantiate(Team, new Vector2(Spawns.transform.position.x + 1.5f,Team.GetComponent<Unit>().Unit_Ypotion), Quaternion.identity);//임시로 0번을 소환
-            cooltime = spawn_cooltime;//쿨 기준 초기화
-            is_Spawn = false;
+            if(Team_Tower.Cost >= Team.GetComponent<Unit>().Base.Cost){
+                GameObject team = (GameObject)Instantiate(Team, new Vector2(Spawns.transform.position.x + 1.5f,Team.GetComponent<Unit>().Unit_Ypotion), Quaternion.identity);//임시로 0번을 소환
+                Team_Tower.Cost = (Team_Tower.Cost - Team.GetComponent<Unit>().Base.Cost);
+                cooltime = spawn_cooltime;//쿨 기준 초기화
+                is_Spawn = false;
+            }
+         
         }
     }
 }
