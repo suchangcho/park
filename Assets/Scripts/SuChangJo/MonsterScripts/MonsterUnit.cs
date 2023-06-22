@@ -7,13 +7,24 @@ public class MonsterUnit : MonoBehaviour
 {
     public MonsterBase _base;
     public int level;
+    public int PowerM = 100; //강화에 필요한 머니
     
     public void PowerUp()
     {
-        level += 1; //레벨업
-        Debug.Log(level);
-        Debug.Log(Attack);
-        Debug.Log(MaxHP);
+        
+        if(GameMgr.Instance.PowerMoney >= PowerM)
+        {
+            level += 1; //레벨업
+            Debug.Log(level);
+            Debug.Log(Attack);
+            Debug.Log(MaxHP);
+            GameMgr.Instance.PowerMoney -= PowerM;
+            PowerM += 10;
+        }
+        else
+        {
+            Debug.Log("돈이 부족해요");
+        }
         //sGameMgr.Instance.PowerMoney = GameMgr.Instance.PowerMoney * 1.1;
     }
     

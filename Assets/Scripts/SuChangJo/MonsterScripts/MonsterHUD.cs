@@ -11,6 +11,7 @@ public class MonsterHUD : MonoBehaviour
     public MonsterUnit monsterUnit;
     public Text hpText;
     public Text attackText;
+    public Text powerM;
     public Text powerMoney;
     //public Text PowerUpMoneyText;
 
@@ -27,8 +28,8 @@ public class MonsterHUD : MonoBehaviour
         levelText.text = "Lvl " + monsterUnit.level;//레벨
         hpText.text = "HP :" + monsterUnit.MaxHP;//체력
         attackText.text = "Attack :" + monsterUnit.Attack;//공격
-        powerMoney.text = "강화비용 :" + GameMgr.Instance.PowerMoney;//강화비용 
-       
+        powerM.text = "강화비용 :" + monsterUnit.PowerM;//강화비용
+        powerMoney.text = "돈: " + GameMgr.Instance.PowerMoney;//가지고 있는 돈                                          
     }
 
 }
