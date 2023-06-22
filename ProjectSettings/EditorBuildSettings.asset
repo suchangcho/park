@@ -27,6 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SuChangJo/Organ.unity
     guid: fbf622f4edb67b642872b73564095b77
   - enabled: 1
+    path: Assets/Scenes/SuChangJo/Main screen.unity
+    guid: 04153d416c4147549a46bf56b1c9d043
+  - enabled: 1
     path: Assets/Scenes/SuChangJo/PowerUp.unity
     guid: 7fe08eb27fdc55d468329b48203a939a
+  - enabled: 1
+    path: Assets/Scenes/SuChangJo/StartScene.unity
+    guid: 632296d52b34ecc4eb9aaac367bc4abc
   m_configObjects: {}
