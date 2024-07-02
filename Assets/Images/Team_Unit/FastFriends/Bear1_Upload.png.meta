@@ -296,10 +296,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -338,6 +340,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -350,6 +353,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -362,6 +366,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2309,9 +2327,101 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Bear1_Upload_0: -1513112977671644767
+      Bear1_Upload_1: -7597721121900800220
+      Bear1_Upload_10: 2474731031086892185
+      Bear1_Upload_11: -8069690050298824510
+      Bear1_Upload_12: 3012939155173766554
+      Bear1_Upload_13: 9203475690525151823
+      Bear1_Upload_14: 8495940235691750679
+      Bear1_Upload_15: 2292093609543959623
+      Bear1_Upload_16: -3157487651478077833
+      Bear1_Upload_17: -3146753376108359020
+      Bear1_Upload_18: 8536643175914304146
+      Bear1_Upload_19: -3198525652450255789
+      Bear1_Upload_2: -1692256738202950776
+      Bear1_Upload_20: 3565617039757278787
+      Bear1_Upload_21: 9120899593715235889
+      Bear1_Upload_22: -6272036229256452556
+      Bear1_Upload_23: 4060486388040727991
+      Bear1_Upload_24: -6893367333095222681
+      Bear1_Upload_25: -8683871951327310841
+      Bear1_Upload_26: 3990848449892521833
+      Bear1_Upload_27: -8709695488327181335
+      Bear1_Upload_28: -1648996403021684159
+      Bear1_Upload_29: 1966072098439697740
+      Bear1_Upload_3: 4599896851736644862
+      Bear1_Upload_30: -131534764927775049
+      Bear1_Upload_31: 3009932717785382357
+      Bear1_Upload_32: 4080166003067160
+      Bear1_Upload_33: 520513610059730074
+      Bear1_Upload_34: -6940735208493879079
+      Bear1_Upload_35: -4410542020030690813
+      Bear1_Upload_36: -4288916019967148301
+      Bear1_Upload_37: -9002984607841347072
+      Bear1_Upload_38: -2189818887656929386
+      Bear1_Upload_39: -2277827644647581628
+      Bear1_Upload_4: -4055799702558926264
+      Bear1_Upload_40: -1802057619110788999
+      Bear1_Upload_41: 926266324972241130
+      Bear1_Upload_42: 4101832011263242083
+      Bear1_Upload_43: 5130338448433147715
+      Bear1_Upload_44: 7847540132186180987
+      Bear1_Upload_45: 5589505867804182893
+      Bear1_Upload_46: -1734674765068267462
+      Bear1_Upload_47: -3750898466933656108
+      Bear1_Upload_48: 7971543803725225850
+      Bear1_Upload_49: 8053937046734390784
+      Bear1_Upload_5: -4589582474245884110
+      Bear1_Upload_50: 264317040948010455
+      Bear1_Upload_51: -59491816859495450
+      Bear1_Upload_52: -4936004640236446891
+      Bear1_Upload_53: -8597564349325965314
+      Bear1_Upload_54: 4526204320677970519
+      Bear1_Upload_55: -3637100341558063633
+      Bear1_Upload_56: -6785988805104359478
+      Bear1_Upload_57: 6657309967116028965
+      Bear1_Upload_58: -5332461119121744310
+      Bear1_Upload_59: 8938401279603548202
+      Bear1_Upload_6: -5663209834583469416
+      Bear1_Upload_60: 7403487086060471162
+      Bear1_Upload_61: 8350791295381079389
+      Bear1_Upload_62: 8563967151448828223
+      Bear1_Upload_63: 6594817828449824810
+      Bear1_Upload_64: 1877475500660475500
+      Bear1_Upload_65: 5760863333352633766
+      Bear1_Upload_66: -6534957870325002249
+      Bear1_Upload_67: 2277520038883168796
+      Bear1_Upload_68: 2489234736000686636
+      Bear1_Upload_69: 8255947145634141034
+      Bear1_Upload_7: -9053260200423658335
+      Bear1_Upload_70: 8635188266474808584
+      Bear1_Upload_71: -5252499963300648084
+      Bear1_Upload_72: -4588962758539583291
+      Bear1_Upload_73: -7891210216758242277
+      Bear1_Upload_74: -6782283639029138142
+      Bear1_Upload_75: -4571876675584081244
+      Bear1_Upload_76: -4325242784717645976
+      Bear1_Upload_77: 4495770056810092808
+      Bear1_Upload_78: -4768049427015542479
+      Bear1_Upload_79: -6179936366234203900
+      Bear1_Upload_8: -7952295036188625952
+      Bear1_Upload_80: -2597607913104104054
+      Bear1_Upload_81: 5603796289261078663
+      Bear1_Upload_82: 3348530395815851716
+      Bear1_Upload_83: -7020127996128785026
+      Bear1_Upload_84: 2182373497860837157
+      Bear1_Upload_85: -6362751576148939861
+      Bear1_Upload_86: -3290698926302106788
+      Bear1_Upload_87: -3517577967036978203
+      Bear1_Upload_88: 5082865874964254877
+      Bear1_Upload_89: -8037987242842518657
+      Bear1_Upload_9: 8156958441376834818
+      Bear1_Upload_90: 6916377959387503874
+      Bear1_Upload_91: 5984286543774013157
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

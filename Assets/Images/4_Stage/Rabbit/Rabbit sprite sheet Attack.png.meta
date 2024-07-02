@@ -71,10 +71,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -113,6 +115,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -125,6 +128,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -137,6 +141,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -509,9 +527,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Rabbit sprite sheet Attack_0: 6687076750830833450
+      Rabbit sprite sheet Attack_1: -5189755288454988103
+      Rabbit sprite sheet Attack_10: 6925747655939474797
+      Rabbit sprite sheet Attack_11: 1029008395327836493
+      Rabbit sprite sheet Attack_12: 5616090100950970590
+      Rabbit sprite sheet Attack_13: 4870571912160653773
+      Rabbit sprite sheet Attack_14: -1170251984342505882
+      Rabbit sprite sheet Attack_15: 8929043151002979798
+      Rabbit sprite sheet Attack_16: 9137635945106012564
+      Rabbit sprite sheet Attack_2: -2785961193087814927
+      Rabbit sprite sheet Attack_3: 3578037758209308351
+      Rabbit sprite sheet Attack_4: -356609487935554825
+      Rabbit sprite sheet Attack_5: 182254000631311921
+      Rabbit sprite sheet Attack_6: -4530742333263861323
+      Rabbit sprite sheet Attack_7: -1972815204046558314
+      Rabbit sprite sheet Attack_8: -2341331301568438881
+      Rabbit sprite sheet Attack_9: 8051549878317849177
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -260,10 +260,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -302,6 +304,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -314,6 +317,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -326,6 +330,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2021,9 +2039,89 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Monster8Pack_0: -2463135604271300025
+      Monster8Pack_1: 1356346975207240137
+      Monster8Pack_10: 6797241582831189742
+      Monster8Pack_11: 4154389719878429328
+      Monster8Pack_12: 2121494464390362510
+      Monster8Pack_13: -5432844796728058636
+      Monster8Pack_14: -224833813254939173
+      Monster8Pack_15: 6621831245738191470
+      Monster8Pack_16: -5004735208135941363
+      Monster8Pack_17: -3032704568377643317
+      Monster8Pack_18: 1466120194730411510
+      Monster8Pack_19: -1231468046776152308
+      Monster8Pack_2: -1488736519906619573
+      Monster8Pack_20: -9193631025799768091
+      Monster8Pack_21: 5150308983800411993
+      Monster8Pack_22: -7654408484673362268
+      Monster8Pack_23: 5850465027743574191
+      Monster8Pack_24: 4042484461648470455
+      Monster8Pack_25: -6451921878807855539
+      Monster8Pack_26: -7542895573334112771
+      Monster8Pack_27: 8464938316225328774
+      Monster8Pack_28: -6101747480892364376
+      Monster8Pack_29: 7048247029765572370
+      Monster8Pack_3: 3665972999011350703
+      Monster8Pack_30: -2836017435972754336
+      Monster8Pack_31: -8212036435676272505
+      Monster8Pack_32: -1781106750788703659
+      Monster8Pack_33: -2598160725761220796
+      Monster8Pack_34: 8864047745438659287
+      Monster8Pack_35: 9196129701765152175
+      Monster8Pack_36: -6184639059186819332
+      Monster8Pack_37: 7452670495086531228
+      Monster8Pack_38: -4165737344080841904
+      Monster8Pack_39: 493879704851905633
+      Monster8Pack_4: 8635939390763919795
+      Monster8Pack_40: -7983189044731217889
+      Monster8Pack_41: 2830520942195632423
+      Monster8Pack_42: 4859192368257785079
+      Monster8Pack_43: 4437644279272679926
+      Monster8Pack_44: 3699440437808536478
+      Monster8Pack_45: 5985827108926469040
+      Monster8Pack_46: 583303362954661474
+      Monster8Pack_47: 1318345211778362597
+      Monster8Pack_48: -2505513241364290211
+      Monster8Pack_49: 5659947602855163323
+      Monster8Pack_5: 1548581195439217816
+      Monster8Pack_50: -4436073713373909877
+      Monster8Pack_51: -3824676153260561868
+      Monster8Pack_52: 6749009846638894364
+      Monster8Pack_53: 4856847635272292479
+      Monster8Pack_54: -2312332491050953636
+      Monster8Pack_55: 8621789237386597905
+      Monster8Pack_56: 10515088759869864
+      Monster8Pack_57: 5027569725940987300
+      Monster8Pack_58: -6830015373087718889
+      Monster8Pack_59: 3280526529009505985
+      Monster8Pack_6: 4833802930952311781
+      Monster8Pack_60: -3062463673755498115
+      Monster8Pack_61: -110195017070337559
+      Monster8Pack_62: 2766762432451363547
+      Monster8Pack_63: -1351826165752279025
+      Monster8Pack_64: 5049173738596849476
+      Monster8Pack_65: 8080811380722364677
+      Monster8Pack_66: -5353752226137252851
+      Monster8Pack_67: 1111325599869954344
+      Monster8Pack_68: 1606215220097539728
+      Monster8Pack_69: -3008992433876881715
+      Monster8Pack_7: 7790594956583858172
+      Monster8Pack_70: -3237029349790025671
+      Monster8Pack_71: -2447205553779356645
+      Monster8Pack_72: 2478674708638410390
+      Monster8Pack_73: 1709905980863747234
+      Monster8Pack_74: -3201767577410750471
+      Monster8Pack_75: -3171004761837440575
+      Monster8Pack_76: 21001474109368678
+      Monster8Pack_77: 8908203403897335014
+      Monster8Pack_78: -61269134121726712
+      Monster8Pack_79: -7288292676128178804
+      Monster8Pack_8: -2323171280915765101
+      Monster8Pack_9: -4775753721369337181
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -224,10 +224,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -266,6 +268,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -278,6 +281,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -290,6 +294,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1733,9 +1751,77 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      mini_capy-removebg-preview_0: 504329594018898179
+      mini_capy-removebg-preview_1: 2702133183390287441
+      mini_capy-removebg-preview_10: 7224067959368557452
+      mini_capy-removebg-preview_11: 7641815115508346023
+      mini_capy-removebg-preview_12: 521260336247779354
+      mini_capy-removebg-preview_13: -1269511029367641011
+      mini_capy-removebg-preview_14: 4674484634332194463
+      mini_capy-removebg-preview_15: -7215520487070498154
+      mini_capy-removebg-preview_16: -1751160074478152199
+      mini_capy-removebg-preview_17: -1023575454803754631
+      mini_capy-removebg-preview_18: 8347010349177760882
+      mini_capy-removebg-preview_19: -8622159557469728785
+      mini_capy-removebg-preview_2: -1214949418043268679
+      mini_capy-removebg-preview_20: -8309625460589197336
+      mini_capy-removebg-preview_21: -6200412445998310037
+      mini_capy-removebg-preview_22: 3178540783564283939
+      mini_capy-removebg-preview_23: 1967021719508291181
+      mini_capy-removebg-preview_24: -6210980831699033845
+      mini_capy-removebg-preview_25: 8180969030674705290
+      mini_capy-removebg-preview_26: 7936152651271438380
+      mini_capy-removebg-preview_27: 5807492891902753475
+      mini_capy-removebg-preview_28: -8905545907871681561
+      mini_capy-removebg-preview_29: -6880388512785326979
+      mini_capy-removebg-preview_3: -3233136695075434208
+      mini_capy-removebg-preview_30: -8550556593459410066
+      mini_capy-removebg-preview_31: -5225959791085947515
+      mini_capy-removebg-preview_32: 3988820265499646265
+      mini_capy-removebg-preview_33: 3070624000884748801
+      mini_capy-removebg-preview_34: -5203632490725434257
+      mini_capy-removebg-preview_35: -1072670470594508996
+      mini_capy-removebg-preview_36: 2636433292718308095
+      mini_capy-removebg-preview_37: -4638348581960980017
+      mini_capy-removebg-preview_38: 5197053691907187442
+      mini_capy-removebg-preview_39: 6867917858678885170
+      mini_capy-removebg-preview_4: 8017408451860221670
+      mini_capy-removebg-preview_40: 8979076447467397895
+      mini_capy-removebg-preview_41: 4131246533495910074
+      mini_capy-removebg-preview_42: 2960942744763752158
+      mini_capy-removebg-preview_43: -9008306935225537001
+      mini_capy-removebg-preview_44: -3836644031555540657
+      mini_capy-removebg-preview_45: -4938051004769243704
+      mini_capy-removebg-preview_46: -5481008286146764869
+      mini_capy-removebg-preview_47: -5304678639759846378
+      mini_capy-removebg-preview_48: -8260591826528599033
+      mini_capy-removebg-preview_49: -5527249477451397658
+      mini_capy-removebg-preview_5: -1396161889152778537
+      mini_capy-removebg-preview_50: 7643741412675624404
+      mini_capy-removebg-preview_51: -4312901080417983436
+      mini_capy-removebg-preview_52: 2489226271705111336
+      mini_capy-removebg-preview_53: 1879628801887435591
+      mini_capy-removebg-preview_54: 6028875430200976156
+      mini_capy-removebg-preview_55: 6247579715845033500
+      mini_capy-removebg-preview_56: 3055316978970763769
+      mini_capy-removebg-preview_57: -2591958824302829968
+      mini_capy-removebg-preview_58: -4986695702306953682
+      mini_capy-removebg-preview_59: 4497035666690992196
+      mini_capy-removebg-preview_6: 6893534762816892308
+      mini_capy-removebg-preview_60: 858187512209530899
+      mini_capy-removebg-preview_61: 7313613533423448591
+      mini_capy-removebg-preview_62: -5808420107982840072
+      mini_capy-removebg-preview_63: -4497312417118540238
+      mini_capy-removebg-preview_64: 3877992719120655849
+      mini_capy-removebg-preview_65: -3821745226809044185
+      mini_capy-removebg-preview_66: -5952331116035302890
+      mini_capy-removebg-preview_67: 5369085115124855861
+      mini_capy-removebg-preview_7: 5858138985779678305
+      mini_capy-removebg-preview_8: 3951572720562291565
+      mini_capy-removebg-preview_9: -5862684917951758117
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

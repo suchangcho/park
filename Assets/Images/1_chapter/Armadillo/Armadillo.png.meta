@@ -98,10 +98,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -140,6 +142,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -152,6 +155,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -164,6 +168,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -725,9 +743,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Armadillo_0: 7117592317043085607
+      Armadillo_1: -1819615623078604468
+      Armadillo_10: 8425415053652479305
+      Armadillo_11: 1467590125712934823
+      Armadillo_12: 2548832673539802407
+      Armadillo_13: 1378701132343439463
+      Armadillo_14: -6711035830942133055
+      Armadillo_15: -8960754602027832116
+      Armadillo_16: 4936408670037233157
+      Armadillo_17: -1213360539137588639
+      Armadillo_18: 7795257538462582546
+      Armadillo_19: -3407930889636495944
+      Armadillo_2: 5516886338052847465
+      Armadillo_20: -271852757273930949
+      Armadillo_21: 6539905259905764196
+      Armadillo_22: 1240911515864660923
+      Armadillo_23: -4719190504470098648
+      Armadillo_24: 7116676112618279347
+      Armadillo_25: 1305299986305314928
+      Armadillo_3: -8593976568394942119
+      Armadillo_4: -389989032384034792
+      Armadillo_5: -7168036086907652268
+      Armadillo_6: -7359514616769813520
+      Armadillo_7: 1342810582436717049
+      Armadillo_8: 274540852906311763
+      Armadillo_9: 7615342950746463126
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

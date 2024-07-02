@@ -65,10 +65,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -107,6 +109,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -119,6 +122,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -131,6 +135,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -461,9 +479,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Hedgehog Sprite Sheet_0: 2020580355358186292
+      Hedgehog Sprite Sheet_1: -3690732609748156944
+      Hedgehog Sprite Sheet_10: 8940671435244545911
+      Hedgehog Sprite Sheet_11: 5798366150665757884
+      Hedgehog Sprite Sheet_12: -7521667789299211455
+      Hedgehog Sprite Sheet_13: 279380878964086253
+      Hedgehog Sprite Sheet_14: -2913140329748803017
+      Hedgehog Sprite Sheet_2: -4663460916374090018
+      Hedgehog Sprite Sheet_3: 4431351593142689561
+      Hedgehog Sprite Sheet_4: 857979625568063556
+      Hedgehog Sprite Sheet_5: 3456779411944085131
+      Hedgehog Sprite Sheet_6: 4006399270587182978
+      Hedgehog Sprite Sheet_7: -5187111510877286020
+      Hedgehog Sprite Sheet_8: 4032593146210300297
+      Hedgehog Sprite Sheet_9: 3879507820948291712
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

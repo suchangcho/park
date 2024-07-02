@@ -101,10 +101,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -143,6 +145,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -155,6 +158,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -167,6 +171,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -749,9 +767,36 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Goblin Mech Rider Sprite Sheet_0: -5957263170480095678
+      Goblin Mech Rider Sprite Sheet_1: 6846801846383389889
+      Goblin Mech Rider Sprite Sheet_10: 3583482650734283196
+      Goblin Mech Rider Sprite Sheet_11: 4429822924689027397
+      Goblin Mech Rider Sprite Sheet_12: -863472459056779977
+      Goblin Mech Rider Sprite Sheet_13: 1236364101180879207
+      Goblin Mech Rider Sprite Sheet_14: 4025959053596931860
+      Goblin Mech Rider Sprite Sheet_15: -254976520370497293
+      Goblin Mech Rider Sprite Sheet_16: 4441830457590124144
+      Goblin Mech Rider Sprite Sheet_17: 5733093690345524710
+      Goblin Mech Rider Sprite Sheet_18: 7118221271031943170
+      Goblin Mech Rider Sprite Sheet_19: -2365219111057357439
+      Goblin Mech Rider Sprite Sheet_2: -8356827078934206808
+      Goblin Mech Rider Sprite Sheet_20: -6390158847573450941
+      Goblin Mech Rider Sprite Sheet_21: 2525026122862432372
+      Goblin Mech Rider Sprite Sheet_22: 2511050518508115244
+      Goblin Mech Rider Sprite Sheet_23: 2913762277676032678
+      Goblin Mech Rider Sprite Sheet_24: -5234514471139879049
+      Goblin Mech Rider Sprite Sheet_25: 5182700673141903981
+      Goblin Mech Rider Sprite Sheet_26: 185859324022075588
+      Goblin Mech Rider Sprite Sheet_3: -7156214953560634047
+      Goblin Mech Rider Sprite Sheet_4: 6141117375468502678
+      Goblin Mech Rider Sprite Sheet_5: -875031655644741316
+      Goblin Mech Rider Sprite Sheet_6: 5899128844404508347
+      Goblin Mech Rider Sprite Sheet_7: 5888306894022746930
+      Goblin Mech Rider Sprite Sheet_8: 7990716371300342121
+      Goblin Mech Rider Sprite Sheet_9: 5602563034409403493
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

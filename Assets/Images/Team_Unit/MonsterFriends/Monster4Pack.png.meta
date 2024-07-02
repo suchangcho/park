@@ -254,10 +254,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -296,6 +298,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -308,6 +311,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -320,6 +324,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1973,9 +1991,87 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Monster4Pack_0: 2260025004878916334
+      Monster4Pack_1: -5508198922570755218
+      Monster4Pack_10: 3095838798539175360
+      Monster4Pack_11: -6080257655877685592
+      Monster4Pack_12: 7063466804772503612
+      Monster4Pack_13: 2840925281269335909
+      Monster4Pack_14: -3653616934122887660
+      Monster4Pack_15: 2172474624686660498
+      Monster4Pack_16: 8315292196809740721
+      Monster4Pack_17: 4188223288559314564
+      Monster4Pack_18: -6602724081547192199
+      Monster4Pack_19: 4542688889130236164
+      Monster4Pack_2: 3370209243230017000
+      Monster4Pack_20: 5088789658183766987
+      Monster4Pack_21: -562188531414907015
+      Monster4Pack_22: -6945941136665870359
+      Monster4Pack_23: -1542092195704775130
+      Monster4Pack_24: 1852123994732881457
+      Monster4Pack_25: -8075892942133094199
+      Monster4Pack_26: -1080547407488716035
+      Monster4Pack_27: -340070160443441324
+      Monster4Pack_28: -8248710361210262779
+      Monster4Pack_29: 5520730655022052789
+      Monster4Pack_3: 3204909847116724698
+      Monster4Pack_30: 418879767507050901
+      Monster4Pack_31: 2854022725202000924
+      Monster4Pack_32: 276973418201539163
+      Monster4Pack_33: -4816066704123216048
+      Monster4Pack_34: -7161494560878274797
+      Monster4Pack_35: 1155127201037651790
+      Monster4Pack_36: -6581932908290058157
+      Monster4Pack_37: 4267754756329165470
+      Monster4Pack_38: -6061891914628759671
+      Monster4Pack_39: -6292838692399087817
+      Monster4Pack_4: -7992534071902304778
+      Monster4Pack_40: 1261967627155716667
+      Monster4Pack_41: 5806358790027357209
+      Monster4Pack_42: 3118294079548889154
+      Monster4Pack_43: -8522088841684912450
+      Monster4Pack_44: -7735170349942416843
+      Monster4Pack_45: 6931353383896362408
+      Monster4Pack_46: 6030212789032568983
+      Monster4Pack_47: 2615648206291029826
+      Monster4Pack_48: -2368815533863257556
+      Monster4Pack_49: 9108059278451710579
+      Monster4Pack_5: 8477920899926790010
+      Monster4Pack_50: 5169713188342945861
+      Monster4Pack_51: -5333727777990218365
+      Monster4Pack_52: -6787817238920628688
+      Monster4Pack_53: 6208857557128018749
+      Monster4Pack_54: 6272255950915332896
+      Monster4Pack_55: 2578156914015715744
+      Monster4Pack_56: 4016272332138934037
+      Monster4Pack_57: -6136845207586744542
+      Monster4Pack_58: 3753101370967499509
+      Monster4Pack_59: -8083959063617057892
+      Monster4Pack_6: 5411694376682484459
+      Monster4Pack_60: 5318567508210946640
+      Monster4Pack_61: 1163972125492276969
+      Monster4Pack_62: 7314290819503248680
+      Monster4Pack_63: 4785959650634462688
+      Monster4Pack_64: 4579650137539708731
+      Monster4Pack_65: 377641000008697429
+      Monster4Pack_66: -1419447028988553401
+      Monster4Pack_67: 6773945004549832742
+      Monster4Pack_68: 1437675332861972139
+      Monster4Pack_69: -1116197683006496375
+      Monster4Pack_7: 9036823630387174268
+      Monster4Pack_70: 1485156064397804612
+      Monster4Pack_71: -3492796463928756271
+      Monster4Pack_72: 5435570083655681960
+      Monster4Pack_73: -4362093963298022434
+      Monster4Pack_74: 5072287906046343657
+      Monster4Pack_75: -382535448699995992
+      Monster4Pack_76: 5962479177329266155
+      Monster4Pack_77: 4032609729533613323
+      Monster4Pack_8: -1935943327472611165
+      Monster4Pack_9: 4988924000388375029
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

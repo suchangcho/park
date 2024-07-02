@@ -128,10 +128,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -170,6 +172,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -182,6 +185,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -194,6 +198,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -965,9 +983,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Monster6Pack_0: -1566199911008027906
+      Monster6Pack_1: -6016895308642912649
+      Monster6Pack_10: -2506334498766107640
+      Monster6Pack_11: 394029330633342536
+      Monster6Pack_12: 6272113068857443900
+      Monster6Pack_13: 5062885681140252797
+      Monster6Pack_14: -5576637069073120235
+      Monster6Pack_15: 7486744251359795991
+      Monster6Pack_16: -7787587046754840379
+      Monster6Pack_17: 925654030722144950
+      Monster6Pack_18: -7356684238207712740
+      Monster6Pack_19: 3754659508877202983
+      Monster6Pack_2: 1279750232133386995
+      Monster6Pack_20: 5205681283157692666
+      Monster6Pack_21: 7104199125289745892
+      Monster6Pack_22: 4138570855849506281
+      Monster6Pack_23: -1890953529511533775
+      Monster6Pack_24: -3783971160694389356
+      Monster6Pack_25: 1219426271543396854
+      Monster6Pack_26: -8890773611689456248
+      Monster6Pack_27: 5595327042117972163
+      Monster6Pack_28: 6261576764115735910
+      Monster6Pack_29: -964813429162085816
+      Monster6Pack_3: 7384809376630780732
+      Monster6Pack_30: -1783928901188587643
+      Monster6Pack_31: -6113309754714274284
+      Monster6Pack_32: -1133246331415550863
+      Monster6Pack_33: 4182128132201959967
+      Monster6Pack_34: -4962236406616442508
+      Monster6Pack_35: 2636856726845128181
+      Monster6Pack_4: -6911214887153084801
+      Monster6Pack_5: -2142548197819342770
+      Monster6Pack_6: -6670806608272294435
+      Monster6Pack_7: -5004286054584770880
+      Monster6Pack_8: -7242451994553054020
+      Monster6Pack_9: 1019839185044869636
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

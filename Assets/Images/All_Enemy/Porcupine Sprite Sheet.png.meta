@@ -92,10 +92,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +136,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -146,6 +149,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -158,6 +162,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -677,9 +695,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Porcupine Sprite Sheet_0: -7491300741837745030
+      Porcupine Sprite Sheet_1: -456556730306476930
+      Porcupine Sprite Sheet_10: 4005795137137229050
+      Porcupine Sprite Sheet_11: 6477009405398519507
+      Porcupine Sprite Sheet_12: -5211396906345823483
+      Porcupine Sprite Sheet_13: -97778181213506797
+      Porcupine Sprite Sheet_14: 232578456084000655
+      Porcupine Sprite Sheet_15: 8925035089356165215
+      Porcupine Sprite Sheet_16: -90058296562460723
+      Porcupine Sprite Sheet_17: -4077564197309529182
+      Porcupine Sprite Sheet_18: 5703662863657361734
+      Porcupine Sprite Sheet_19: 5058513340089669814
+      Porcupine Sprite Sheet_2: -6952236421383494930
+      Porcupine Sprite Sheet_20: -6510249512936449347
+      Porcupine Sprite Sheet_21: -6645840776943324525
+      Porcupine Sprite Sheet_22: -6891766505934019612
+      Porcupine Sprite Sheet_23: 5808717816194356825
+      Porcupine Sprite Sheet_3: -5271806759042227690
+      Porcupine Sprite Sheet_4: 5172965429940773052
+      Porcupine Sprite Sheet_5: 457081646574225153
+      Porcupine Sprite Sheet_6: 5503189837954054131
+      Porcupine Sprite Sheet_7: 9160870009274981120
+      Porcupine Sprite Sheet_8: -2865388522953071361
+      Porcupine Sprite Sheet_9: 4057257154113652333
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

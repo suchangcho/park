@@ -92,10 +92,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +136,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -146,6 +149,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -158,6 +162,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -677,9 +695,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Cacodaemon Sprite Sheet_0: 6389790121533867865
+      Cacodaemon Sprite Sheet_1: -3852113458823382303
+      Cacodaemon Sprite Sheet_10: 7112838895952259862
+      Cacodaemon Sprite Sheet_11: -6949584599233666273
+      Cacodaemon Sprite Sheet_12: -5138439382098170774
+      Cacodaemon Sprite Sheet_13: -1376189586554993406
+      Cacodaemon Sprite Sheet_14: -8916707295786921608
+      Cacodaemon Sprite Sheet_15: -6242054799334906656
+      Cacodaemon Sprite Sheet_16: -4180759591894971638
+      Cacodaemon Sprite Sheet_17: 2459692808887900460
+      Cacodaemon Sprite Sheet_18: -1874386889993243614
+      Cacodaemon Sprite Sheet_19: -3471362277137582445
+      Cacodaemon Sprite Sheet_2: -7517396926043841675
+      Cacodaemon Sprite Sheet_20: 4296365076730665381
+      Cacodaemon Sprite Sheet_21: -4008731628196936064
+      Cacodaemon Sprite Sheet_22: 7733959977076908501
+      Cacodaemon Sprite Sheet_23: 2866245267187518156
+      Cacodaemon Sprite Sheet_3: -5837719191672891323
+      Cacodaemon Sprite Sheet_4: 3256740997420468133
+      Cacodaemon Sprite Sheet_5: 4402805786130018716
+      Cacodaemon Sprite Sheet_6: -3445638416284038088
+      Cacodaemon Sprite Sheet_7: 7407922803484994528
+      Cacodaemon Sprite Sheet_8: -2092530981859022121
+      Cacodaemon Sprite Sheet_9: 5764096388217608220
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
